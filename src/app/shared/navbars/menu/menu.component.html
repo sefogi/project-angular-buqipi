@@ -1,0 +1,26 @@
+<ul class="navbar-nav align-items-lg-center" [class]="navClass" id="top-menu">
+    <li class="nav-item">
+        <a class="nav-link top-nav-link-ref" [routerLink]="'/home'" routerLinkActive="active">Producto</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link top-nav-link-ref" [routerLink]="'/home'" routerLinkActive="active">Características</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link top-nav-link-ref" [routerLink]="'/home'" routerLinkActive="active">Precios</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link top-nav-link-ref" [routerLink]="'/home'" routerLinkActive="active">Contacto</a>
+    </li>
+
+    <ng-container *ngIf="showDownload">
+        <li class="nav-item">
+            <a class="nav-link top-nav-link-ref" href="https://sso.creativetecno.com/u/login/identifier?state=hKFo2SBhakJ6UWkzUWVjUHRFUGRUUVVIQXpNV3FuZUpPcFdGNaFur3VuaXZlcnNhbC1sb2dpbqN0aWTZIGN2ekVpdjU3YWdfOUVxanlhZWFNeGJaSnpsQlhMdWFBo2NpZNkgUzNWSmJmS2RZc3J1WXpUemNFZmN0cXpQajFNek5oREM" target="_blank">Iniciar sesión</a>
+
+        </li>
+
+        <li class="nav-item ms-2">
+            <a class="btn" [class]="ctaButtonClass" routerLink="/">Pruebalo</a>
+        </li>
+    </ng-container>
+
+</ul>
