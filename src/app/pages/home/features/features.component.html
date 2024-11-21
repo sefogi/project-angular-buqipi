@@ -1,34 +1,43 @@
-<section class="my-lg-5 py-5 py-sm-7 bg-gradient2 position-relative" data-aos="fade-up">
-    <div class="divider top d-none d-sm-block"></div>
+<section class="pt-lg-6 pt-4 pb-lg-6 pb-5 position-relative overflow-hidden">
     <div class="container">
-        <div class="row">
-            <div class="col text-center">
-                <span class="badge rounded-pill badge-soft-primary px-2 py-1">Features</span>
-                <h1 class="display-4 fw-semibold">Why Choose Prompt</h1>
-                <p class="text-secondary mx-auto">A modern design, fresh look and feel</p>
+        <div class="row align-items-center mb-6 pb-lg-5">
+            <div class="col-lg-5">
+                <div class="mb-4 mb-lg-0">
+                    <span class="badge rounded-pill badge-soft-danger px-2 py-1">Feature</span>
+                    <h1 class="display-4 fw-medium mb-3">Automate everything</h1>
+                    <p class="text-muted mx-auto mb-4 pb-3">
+                        You don't need to manully follow up with your visitors. The Prompt takes care of it and follow
+                        up automatically with them to understand their needs
+                    </p>
+                    <a [routerLink]="['.']" class="btn btn-outline-primary">
+                        Learn more <i class="icon-xxs ms-1" data-feather="arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-6 offset-lg-1">
+                <img src="assets/images/features/buqipi_dash/dash1.png" alt="" class="img-fluid" data-aos="fade-left"
+                    data-aos-duration="1000" />
             </div>
         </div>
 
-        <div class="row mt-5">
-            <div class="col-lg-4" data-aos="fade-up" data-duration="600" *ngFor="let feature of features">
-                <div class="card shadow-sm">
-                    <div class="card-body p-2">
-                        <div class="d-flex align-items-center">
-                            <span
-                                class="bg-soft-primary avatar avatar-sm rounded-lg icon icon-with-bg icon-xs text-primary me-3 flex-shrink-0">
-                                <i [attr.data-feather]="feature.icon" class="icon-dual-primary"
-                                    *ngIf="feature.icon"></i>
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <div class="bg-white p-2 rounded border shadow mb-lg-0 mb-3" data-aos="fade-right"
+                    data-aos-duration="1500">
+                    <img src="assets/images/features/buqipi_dash/dash2.png" alt="" class="img-fluid" />
+                </div>
+            </div>
 
-                                <span class="fw-bolder" *ngIf="!feature.icon">{{feature.name[0]}}</span>
-
-
-                            </span>
-
-                            <div class="flex-grow-1">
-                                <h5 class="m-0">{{feature.name}}</h5>
-                            </div>
-                        </div>
-                    </div>
+            <div class="col-lg-5 offset-lg-1">
+                <div class="mt-4 mt-lg-0">
+                    <h1 class="display-4 fw-medium mb-3">Auto-tune your marketing campaigns</h1>
+                    <p class="text-muted mx-auto mb-4 pb-3">
+                        The prompts keeps an eye on your all marketting effort and auto tune the marketing campaigns
+                        settings to make them perform better
+                    </p>
+                    <a [routerLink]="['.']" class="btn btn-outline-primary">
+                        Learn more <i class="icon-xxs ms-1" data-feather="arrow-right"></i>
+                    </a>
                 </div>
             </div>
         </div>
