@@ -1,8 +1,9 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import{CtaComponent} from "./pages/home/cta/cta.component"
 
 // guard
-import { AuthGuard } from './core/guards/auth.guard';
+// import { AuthGuard } from './core/guards/auth.guard';
 
 const routes: Routes = [
   {
@@ -11,13 +12,9 @@ const routes: Routes = [
     pathMatch: 'full'
   },
   {
-    path: '',
-    canActivate: [AuthGuard],
-    loadChildren: () => import('./pages/pages.module').then(m => m.PagesModule)
-  },
-  {
-    path: 'docs',
-    loadChildren: () => import('./docs/docs.module').then(m => m.DocsModule)
+    path: '#Producto',
+    // component:CtaComponent,
+    loadChildren: () => import('./pages/home/cta/cta.component').then((m) => m.CtaComponent)
   },
   {
     path: 'auth',
