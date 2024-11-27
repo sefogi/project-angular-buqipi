@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import{CtaComponent} from "./pages/home/cta/cta.component"
+// import{CtaComponent} from "./pages/home/cta/cta.component"
 
 // guard
 // import { AuthGuard } from './core/guards/auth.guard';
