@@ -18,8 +18,7 @@ import { HomeComponent } from './home.component';
 import { InnerPagesComponent } from './inner-pages/inner-pages.component';
 import { LandingPagesComponent } from './landing-pages/landing-pages.component';
 import {HeroElevenComponent} from './heros/hero-eleven/hero-eleven.component'
-
-
+import { TableComponent } from './table/table.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +28,7 @@ import {HeroElevenComponent} from './heros/hero-eleven/hero-eleven.component'
     FeaturesComponent,
     FooterComponent,
     CtaComponent,
+    TableComponent,
     AccountPagesComponent,
     InnerPagesComponent,
     LandingPagesComponent
