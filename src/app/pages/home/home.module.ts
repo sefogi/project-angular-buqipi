@@ -7,7 +7,7 @@ import { SwiperModule } from 'swiper/angular';
 import { NavbarsModule } from 'src/app/shared/navbars/navbars.module';
 import { UiModule } from 'src/app/shared/ui/ui.module';
 import { HomeRoutingModule } from './home-routing.module';
-
+import { ContactModule } from './contact/contact.module';
 // component
 import { AccountPagesComponent } from './account-pages/account-pages.component';
 import { CtaComponent } from './cta/cta.component';
@@ -20,6 +20,7 @@ import { LandingPagesComponent } from './landing-pages/landing-pages.component';
 import {HeroElevenComponent} from './heros/hero-eleven/hero-eleven.component'
 import { TableComponent } from './table/table.component';
 
+
 @NgModule({
   declarations: [
     HomeComponent,
@@ -31,7 +32,8 @@ import { TableComponent } from './table/table.component';
     TableComponent,
     AccountPagesComponent,
     InnerPagesComponent,
-    LandingPagesComponent
+    LandingPagesComponent,
+
   ],
   imports: [
     CommonModule,
@@ -40,6 +42,7 @@ import { TableComponent } from './table/table.component';
     NavbarsModule,
     UiModule,
     HomeRoutingModule,
+    ContactModule,
     
   ]
 })
