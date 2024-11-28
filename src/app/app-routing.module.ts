@@ -25,6 +25,10 @@ const routes: Routes = [
     loadChildren: () => import('./pages/home/features/features.component').then(m => m.FeaturesComponent)
   },
   {
+    path: '#Precios',
+    loadChildren: () => import('./pages/home/pricing/pricing.component').then(m => m.PricingComponent)
+  },
+  {
     path: 'home',
     loadChildren: () => import('./pages/home/home.module').then(m => m.HomeModule)
   }
