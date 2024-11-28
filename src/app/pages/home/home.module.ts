@@ -20,7 +20,7 @@ import { LandingPagesComponent } from './landing-pages/landing-pages.component';
 import {HeroElevenComponent} from './heros/hero-eleven/hero-eleven.component'
 import { TableComponent } from './table/table.component';
 import {PricingComponent} from './pricing/pricing.component'
-
+import { SectionendComponent } from './sectionend/sectionend.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +32,7 @@ import {PricingComponent} from './pricing/pricing.component'
     CtaComponent,
     TableComponent,
     PricingComponent,
+    SectionendComponent,
     AccountPagesComponent,
     InnerPagesComponent,
     LandingPagesComponent,
