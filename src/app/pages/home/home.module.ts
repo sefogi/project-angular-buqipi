@@ -19,6 +19,7 @@ import { InnerPagesComponent } from './inner-pages/inner-pages.component';
 import { LandingPagesComponent } from './landing-pages/landing-pages.component';
 import {HeroElevenComponent} from './heros/hero-eleven/hero-eleven.component'
 import { TableComponent } from './table/table.component';
+import {PricingComponent} from './pricing/pricing.component'
 
 
 @NgModule({
@@ -30,6 +31,7 @@ import { TableComponent } from './table/table.component';
     FooterComponent,
     CtaComponent,
     TableComponent,
+    PricingComponent,
     AccountPagesComponent,
     InnerPagesComponent,
     LandingPagesComponent,
