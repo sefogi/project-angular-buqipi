@@ -7,7 +7,7 @@ import { SwiperModule } from 'swiper/angular';
 import { NavbarsModule } from 'src/app/shared/navbars/navbars.module';
 import { UiModule } from 'src/app/shared/ui/ui.module';
 import { HomeRoutingModule } from './home-routing.module';
-import { ContactModule } from './contact/contact.module';
+
 // component
 import { AccountPagesComponent } from './account-pages/account-pages.component';
 import { CtaComponent } from './cta/cta.component';
@@ -42,7 +42,7 @@ import { TableComponent } from './table/table.component';
     NavbarsModule,
     UiModule,
     HomeRoutingModule,
-    ContactModule,
+    
     
   ]
 })

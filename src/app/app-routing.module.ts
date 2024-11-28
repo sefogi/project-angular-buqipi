@@ -16,10 +16,10 @@ const routes: Routes = [
     // component:CtaComponent,
     loadChildren: () => import('./pages/home/cta/cta.component').then((m) => m.CtaComponent)
   },
-  {
-    path: 'landing',
-    loadChildren: () => import('./pages/landings/landings.module').then(m => m.LandingsModule)
-  },
+  // {
+  //   path: 'landing',
+  //   loadChildren: () => import('./pages/landings/landings.module').then(m => m.LandingsModule)
+  // },
   {
     path: '#Caracteristicas',
     loadChildren: () => import('./pages/home/features/features.component').then(m => m.FeaturesComponent)
