@@ -68,3 +68,59 @@ $hover-scale: 1.1;
     height: auto;
   }
 
+/* Estilo para el formulario */
+.container1 {
+  background-color: #f8f9fa;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #495057;
+}
+
+.form-label {
+  color: #6c757d;
+  font-weight: bold;
+}
+
+.form-control {
+  border: none;
+  border-bottom: 2px solid #6c757d;
+  border-radius: 0;
+  background-color: transparent;
+  color: #495057;
+  font-size: 1rem;
+}
+
+.form-control:focus {
+  outline: none;
+  border-color: #17a2b8; /* Color 'info' de Bootstrap */
+}
+
+textarea.form-control {
+  resize: vertical;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #17a2b8;
+  border: none;
+  color: white;
+  font-size: 1.1rem;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #138496;
+}
+
+button:focus {
+  outline: none;
+}
+
+
