@@ -6,6 +6,7 @@ import { SwiperModule } from 'swiper/angular';
 
 // module
 import { NavbarsModule } from 'src/app/shared/navbars/navbars.module';
+import { SharedModule } from 'src/app/shared/shared.module';
 import { UiModule } from 'src/app/shared/ui/ui.module';
 import { HomeRoutingModule } from './home-routing.module';
 
@@ -22,10 +23,11 @@ import {HeroElevenComponent} from './heros/hero-eleven/hero-eleven.component'
 import { TableComponent } from './table/table.component';
 import {PricingComponent} from './pricing/pricing.component'
 import { SectionendComponent } from './sectionend/sectionend.component';
+import { TestimonialComponent } from './testimonial/testimonial.component';
 
 @NgModule({
   declarations: [
-    
+    TestimonialComponent,
     HomeComponent,
     HeroComponent,
     HeroElevenComponent,
@@ -47,6 +49,7 @@ import { SectionendComponent } from './sectionend/sectionend.component';
     NavbarsModule,
     UiModule,
     HomeRoutingModule,
+    SharedModule
     
     
   ]

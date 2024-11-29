@@ -1,63 +1,25 @@
-<section class="mt-lg-5 pt-5 pb-4 bg-gradient1 position-relative">
-    <div class="container">
-      <div class="row">
-        <!-- Primera columna: Logo y descripción -->
-        <div class="col-xl-4 col-lg-6 col-md-12 text-center text-lg-start">
-          <a class="navbar-brand me-lg-4 mb-4 d-flex align-items-center justify-content-center justify-content-lg-start pt-0" [routerLink]="['/']">
-            <img src="assets/images/logo.png" class="img-fluid" height="20" alt="Logo" />
-          </a>
-          <p class="text-muted w-100 w-lg-75 mx-auto mx-lg-0">
-            Sistema intuitivo, seguro, completo y con infinitas posibilidades para tu establecimiento.
-          </p>
-        </div>
-        
-        <!-- Segunda columna: Links -->
-        <div class="col-xl-auto col-lg-3 col-md-6 col-12 mt-4 mt-md-0 text-center text-md-start">
-          <div class="ps-xl-5">
-            <h6 class="mb-3 mt-3 fs-14 fw-semibold text-uppercase">Links</h6>
-            <ul class="list-unstyled">
-              <li class="my-3"><a [routerLink]="['/Contacto']" class="text-muted">Contacto</a></li>
-              <li class="my-3"><a [routerLink]="['/']" class="text-muted" data-bs-toggle="modal" data-bs-target="#calendlyModal">Pruebalo ahora</a></li>
-            </ul>
+<section class="section pt-lg-5 pt-3 pb-3 position-relative" data-aos="fade-up">
+  <div class="container">
+      <div class="row align-items-center">
+          <div class="col text-center">
+              <ul class="list-inline list-with-separator">
+                  <li class="list-inline-item me-0"><a [routerLink]="['.']">Contacto</a></li>
+                  <li class="list-inline-item me-0"><a [routerLink]="['.']">Pruébalo ahora</a></li>
+                  <li class="list-inline-item me-0"><a [routerLink]="['.']">Aviso legal</a></li>
+                  <li class="list-inline-item me-0"><a [routerLink]="['.']">T&Cs</a></li>
+                  <li class="list-inline-item me-0"><a [routerLink]="['.']">Política de Privacidad</a></li>
+                  
+                  <li class="list-inline-item me-0">
+                      <a [routerLink]="['.']">Política de Cookies</a>
+                  </li>
+              </ul>
+              <p class="mt-2 fs-14">
+                  {{today | date: 'yyyy'}} © CREATIVE HOLDINGS GROUP
+                  <a href="" target="_blank"></a>
+              </p>
+
+              <img src="assets/images/logo.png" height="40" class="mt-2 mb-4" alt="" />
           </div>
-        </div>
-        
-        <!-- Tercera columna: Legal -->
-        <div class="col-xl-auto col-lg-3 col-md-6 col-12 mt-4 mt-md-0 text-center text-md-start">
-          <div class="ps-xl-5">
-            <h6 class="mb-4 mt-3 fs-14 fw-semibold text-uppercase">Legal</h6>
-            <ul class="list-unstyled">
-              <li class="my-3"><a [routerLink]="['.']" class="text-muted">Aviso Legal</a></li>
-              <li class="my-3"><a [routerLink]="['.']" class="text-muted">T&Cs</a></li>
-              <li class="my-3"><a [routerLink]="['.']" class="text-muted">Política de Privacidad</a></li>
-              <li class="my-3"><a [routerLink]="['.']" class="text-muted">Política de Cookies</a></li>
-            </ul>
-          </div>
-        </div>
       </div>
-      <hr />
-      <div class="row text-md-start text-center">
-        <!-- Texto de derechos reservados -->
-        <div class="col-md-8 mb-3 mb-md-0">
-          <p class="pb-0 mb-0 text-muted">
-            {{today | date:'yyyy'}} © CREATIVE HOLDINGS GROUP
-          </p>
-        </div>
-        <!-- Íconos de redes sociales -->
-        <div class="col-md-4 text-md-end">
-          <ul class="list-unstyled d-flex justify-content-center justify-content-md-end mb-0">
-            <li class="d-inline-block me-3">
-              <a [routerLink]="['.']"><i data-feather="instagram" class="icon icon-xs"></i></a>
-            </li>
-            <li class="d-inline-block me-3">
-              <a [routerLink]="['.']"><i data-feather="facebook" class="icon icon-xs"></i></a>
-            </li>
-            <li class="d-inline-block">
-              <a [routerLink]="['.']"><i data-feather="linkedin" class="icon icon-xs"></i></a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-  
+  </div>
+</section>
