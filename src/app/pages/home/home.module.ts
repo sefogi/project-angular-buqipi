@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { NgxTypedJsModule } from 'ngx-typed-js';
 import { SwiperModule } from 'swiper/angular';
 
+
 // module
 import { NavbarsModule } from 'src/app/shared/navbars/navbars.module';
 import { UiModule } from 'src/app/shared/ui/ui.module';
@@ -24,6 +25,7 @@ import { SectionendComponent } from './sectionend/sectionend.component';
 
 @NgModule({
   declarations: [
+    
     HomeComponent,
     HeroComponent,
     HeroElevenComponent,

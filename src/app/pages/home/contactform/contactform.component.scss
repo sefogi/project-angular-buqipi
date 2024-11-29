@@ -1,0 +1,70 @@
+// Variables para colores y sombras
+$primary-color: #17a2b8; // Color info de Bootstrap
+$secondary-color: #ffffff;
+$shadow-color: rgba(0, 0, 0, 0.2);
+$hover-scale: 1.1;
+
+// Estilos generales para la tarjeta
+.card {
+  border-radius: 15px;
+  box-shadow: 0 4px 8px $shadow-color;
+  
+  &-header {
+    background-color: $primary-color;
+    color: $secondary-color;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+
+  &-body {
+    padding: 2rem;
+  }
+}
+
+// Estilos para el logo
+.logo-img {
+  width: 200px; // Tamaño del logo
+  height: auto;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: scale($hover-scale);
+  }
+}
+
+// Estilos para los botones
+.btn-info {
+  border-radius: 20px;
+  box-shadow: 0 4px 6px $shadow-color;
+  transition: box-shadow 0.3s ease;
+
+  &:hover {
+    box-shadow: 0 6px 10px $shadow-color;
+  }
+}
+
+// Validaciones para formularios
+.form-control {
+  &.ng-invalid.ng-touched {
+    border-color: $primary-color;
+    box-shadow: 0 0 5px lighten($primary-color, 30%);
+  }
+
+  &.ng-valid.ng-touched {
+    border-color: darken($primary-color, 10%);
+  }
+}
+
+// Estilos para el texto de error
+.text-danger {
+  font-size: 0.9rem;
+}
+
+.img-fluid {
+    max-width: 13%;
+    height: auto;
+  }
+

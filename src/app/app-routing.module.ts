@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { ContactFormComponent } from './pages/home/contactform/contactform.component';
 // import{CtaComponent} from "./pages/home/cta/cta.component"
 
 // guard
@@ -27,6 +28,10 @@ const routes: Routes = [
   {
     path: '#Precios',
     loadChildren: () => import('./pages/home/pricing/pricing.component').then(m => m.PricingComponent)
+  },
+  {
+    path: 'Contacto',
+    component:ContactFormComponent
   },
   {
     path: 'home',
