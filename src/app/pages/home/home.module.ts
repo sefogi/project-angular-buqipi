@@ -25,6 +25,7 @@ import {PricingComponent} from './pricing/pricing.component'
 import { SectionendComponent } from './sectionend/sectionend.component';
 import { TestimonialComponent } from './testimonial/testimonial.component';
 
+
 @NgModule({
   declarations: [
     TestimonialComponent,
@@ -32,6 +33,7 @@ import { TestimonialComponent } from './testimonial/testimonial.component';
     HeroComponent,
     HeroElevenComponent,
     FeaturesComponent,
+
     FooterComponent,
     CtaComponent,
     TableComponent,

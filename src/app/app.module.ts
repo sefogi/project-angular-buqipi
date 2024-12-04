@@ -9,7 +9,7 @@ import { LeafletModule } from '@asymmetrik/ngx-leaflet';
 // modules
 import { CoreModule } from './core/core.module';
 import { AppRoutingModule } from './app-routing.module';
-// import { RouterModule } from '@angular/router';
+import { SharedModule } from './shared/shared.module';
 
 // component
 import { AppComponent } from './app.component';
@@ -31,7 +31,7 @@ import { ContactFormComponent } from './pages/home/contactform/contactform.compo
     LeafletModule,
     CoreModule,
     AppRoutingModule,
-    
+    SharedModule
   ],
  
   providers: [],
