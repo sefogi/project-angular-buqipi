@@ -151,18 +151,18 @@ export const features: Feature[] = [
     },
     {
         icon: 'layout',
-        name: 'Cross-browser compatible',
+        name: '',
         shapes: ['shape3', 'shape4'],
-        title: "Create Task Easily",
-        description: 'Speedy App provides instant information on thousands of hire and buy products.',
+        title: "Planing y Reservas",
+        description: 'Visualiza tu agenda de reservas de forma clara y organizada, para que nunca pierdas de vista tu disponibilidad.',
         image: 'assets/images/features/app4.png'
     },
     {
         icon: '',
         name: '',
         shapes: ['shape5', 'shape6'],
-        title: 'Quick Access to Team',
-        description: "'Save time and edit like a pro! Yes! you will be able to edit your application on the easy way.',",
+        title: 'Tarifas e Inventario',
+        description: "Lleva un control detallado de tus productos o servicios, evitando faltantes y sobrecargas.",
         image: 'assets/images/features/app4.png',
     }
     
