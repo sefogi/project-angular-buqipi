@@ -466,12 +466,12 @@ $utilities-bg-colors: map-loop($utilities-bg, rgba-css-var, "$key", "bg");
 
 // Links
 //
-// Style anchor elements.
+// Style anchor elements.//estilos de los links
 
 $link-color:                              $body-color;
 $link-decoration:                         none;
 $link-shade-percentage:                   30%;
-$link-hover-color:                        $primary;
+$link-hover-color:                        $cyanbuqipi;//color del menu
 $link-hover-decoration:                   underline;
 
 $stretched-link-pseudo-element:           after;
