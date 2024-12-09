@@ -55,6 +55,7 @@ $green: #3cd278;
 $teal: #20c997;
 $cyan: #17a2b8;
 $cyanbuqipi:#219EBC;
+$azulbuqipi:#192F45;
 // scss-docs-end color-variables
 
 // scss-docs-start colors-map
@@ -73,6 +74,7 @@ $colors: (
     "gray": $gray-600,
     "gray-dark": $gray-800,
     "cyanbuqipi": $cyanbuqipi,
+    "azulbuqipi": $azulbuqipi,
 );
 // scss-docs-end colors-map
 
@@ -87,6 +89,7 @@ $light: $gray-100;
 $dark: $gray-800;
 $gray-50: $gray-50;
 $buqipi:$cyanbuqipi;
+$azulbuqipi:$azulbuqipi;
 // scss-docs-end theme-color-variables
 
 // scss-docs-start theme-colors-map
@@ -103,6 +106,7 @@ $theme-colors: (
     "teal": $teal,
     "gray-50": $gray-50,
     "cyanbuqipi": $cyanbuqipi,
+    "azulbuqipi": $azulbuqipi,
 );
 // scss-docs-end theme-colors-map
 
