@@ -17,8 +17,8 @@ import { FeaturesComponent } from './features/features.component';
 import { FooterComponent } from './footer/footer.component';
 import { HeroComponent } from './hero/hero.component';
 import { HomeComponent } from './home.component';
-import { InnerPagesComponent } from './inner-pages/inner-pages.component';
-import { LandingPagesComponent } from './landing-pages/landing-pages.component';
+// import { InnerPagesComponent } from './inner-pages/inner-pages.component';
+// import { LandingPagesComponent } from './landing-pages/landing-pages.component';
 import {HeroElevenComponent} from './heros/hero-eleven/hero-eleven.component'
 import { TableComponent } from './table/table.component';
 import {PricingComponent} from './pricing/pricing.component'
@@ -40,8 +40,8 @@ import { TestimonialComponent } from './testimonial/testimonial.component';
     PricingComponent,
     SectionendComponent,
     AccountPagesComponent,
-    InnerPagesComponent,
-    LandingPagesComponent,
+    // InnerPagesComponent,
+    // LandingPagesComponent,
 
   ],
   imports: [
