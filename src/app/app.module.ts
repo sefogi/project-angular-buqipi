@@ -13,7 +13,8 @@ import { SharedModule } from './shared/shared.module';
 
 // component
 import { AppComponent } from './app.component';
-import { ContactFormComponent } from './pages/home/contactform/contactform.component'
+import { ContactFormComponent } from './pages/home/contactform/contactform.component';
+import { PoliticasComponent } from './pages/home/politicas/politicas.component'
 //import { ModalComponent } from './pages/home/modal/modal.component';
 
 
@@ -21,6 +22,7 @@ import { ContactFormComponent } from './pages/home/contactform/contactform.compo
   declarations: [
     AppComponent,
     ContactFormComponent,
+    PoliticasComponent,
     //ModalComponent,
     
   ],

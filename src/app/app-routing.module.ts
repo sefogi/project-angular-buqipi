@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ContactFormComponent } from './pages/home/contactform/contactform.component';
-// import{CtaComponent} from "./pages/home/cta/cta.component"
+import { PoliticasComponent } from './pages/home/politicas/politicas.component';
 
 // guard
 // import { AuthGuard } from './core/guards/auth.guard';
@@ -32,6 +32,10 @@ const routes: Routes = [
   {
     path: 'Contacto',
     component:ContactFormComponent
+  },
+  {
+    path: 'Politicas',
+    component:PoliticasComponent
   },
   {
     path: 'home',

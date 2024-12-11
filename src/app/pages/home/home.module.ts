@@ -25,7 +25,7 @@ import {PricingComponent} from './pricing/pricing.component'
 import { SectionendComponent } from './sectionend/sectionend.component';
 import { TestimonialComponent } from './testimonial/testimonial.component';
 import { ModalComponent } from './modal/modal.component';
-
+import { ModalVideoComponent } from './modalvideo/modalvideo.component';
 @NgModule({
   declarations: [
     TestimonialComponent,
@@ -34,8 +34,7 @@ import { ModalComponent } from './modal/modal.component';
     HeroElevenComponent,
     FeaturesComponent,
     ModalComponent,
-   
-
+    ModalVideoComponent,
     FooterComponent,
     CtaComponent,
     TableComponent,

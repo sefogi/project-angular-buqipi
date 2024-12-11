@@ -1,0 +1,135 @@
+<app-navbar-3
+  navClass="bg-white navbar-light zindex-10"
+  [fixedWidth]="true"
+  [sticky]="true"
+  ctaButtonClass="btn-warning btn-sm"
+></app-navbar-3>
+
+<section me-3>
+<div class="container-fluid mt5">
+  <div class="row">
+    <!-- Menú lateral izquierdo -->
+    <nav class="col-md-3 col-lg-2 d-md-block bg-light sidebar">
+      <div class="position-sticky">
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link active" href="#nota-informativa">Nota informativa</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#aviso-legal">Aviso legal WEB</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#politica-privacidad-web">Política de privacidad WEB</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#politica-privacidad-rs">Política de privacidad RRSS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#politica-cookies">Política de Cookies WEB</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#modelo-ejercicio">Modelo ejercicio de derechos</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Nota informativa -->
+    <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+      <div id="nota-informativa" class="mt-4">
+        <h2>Nota informativa</h2>
+        <p><strong>Última actualización:</strong> 22/12/2023</p>
+        <h4>¿A qué servicios afecta?</h4>
+        <p>
+          Los términos y condiciones, política de privacidad, política de cookies y Aviso Legal aquí mostrados aplican
+          única y exclusivamente al sitio web:
+        </p>
+        <ul>
+          <li><a href="https://www.bugji.com">www.bugji.com</a></li>
+          <li><a href="https://www.creativtecno.com">www.creativtecno.com</a></li>
+          <li><a href="https://www.creativtecno.es">www.creativtecno.es</a></li>
+          <li><a href="https://www.creativtecno.net">www.creativtecno.net</a></li>
+        </ul>
+        <h4>Productos y Servicios</h4>
+        <p>
+          Todos los productos y/o servicios que CREATIVTECNO IBERIA SL comercializa requieren de la firma de un contrato
+          de Prestación de Servicios (PS). En el contrato PS se especificarán las condiciones generales y particulares
+          de contratación, así como la aplicable política de privacidad, contratos de encargo de tratamiento de datos
+          personales e información legal aplicable.
+        </p>
+        <p>
+          Si necesita más información al respecto, puede ponerse en contacto con
+          <a href="mailto:legal@creativtecno.com">legal@creativtecno.com</a>.
+        </p>
+      </div>
+    </main>
+  </div>
+</div>
+</section>
+
+<!--footer-->
+<section class="mt-lg-5 pt-5 pb-4 bg-gradient1 position-relative">
+  <div class="container">
+    <div class="row">
+      <!-- Primera columna: Logo y descripción -->
+      <div class="col-xl-4 col-lg-6 col-md-12 text-center text-lg-start">
+        <a
+          class="navbar-brand me-lg-4 mb-4 d-flex align-items-center justify-content-center justify-content-lg-start pt-0"
+          [routerLink]="['/']"
+        >
+          <img src="assets/logos/logo_creative.png" class="" height="80" alt="Logo" />
+        </a>
+        <p class="text-muted w-100 w-lg-75 mx-auto mx-lg-0"></p>
+      </div>
+
+      <!-- Segunda columna: Links -->
+      <div class="col-xl-auto col-lg-3 col-md-6 col-12 mt-4 mt-md-0 text-center text-md-start">
+        <div class="ps-xl-5">
+          <h6 class="mb-3 mt-3 fs-14 fw-semibold text-uppercase">Links</h6>
+          <ul class="list-unstyled">
+            <li class="my-3"><a [routerLink]="['/Contacto']" class="text-muted">Contacto</a></li>
+            <li class="my-3">
+              <a [routerLink]="['/']" class="text-muted" data-bs-toggle="modal" data-bs-target="#calendlyModal"
+                >Pruebalo ahora</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Tercera columna: Legal -->
+      <div class="col-xl-auto col-lg-3 col-md-6 col-12 mt-4 mt-md-0 text-center text-md-start">
+        <div class="ps-xl-5">
+          <h6 class="mb-4 mt-3 fs-14 fw-semibold text-uppercase">Legal</h6>
+          <ul class="list-unstyled">
+            <li class="my-3"><a [routerLink]="['.']" class="text-muted">Aviso Legal</a></li>
+            <li class="my-3"><a [routerLink]="['.']" class="text-muted">T&Cs</a></li>
+            <li class="my-3"><a [routerLink]="['.']" class="text-muted">Política de Privacidad</a></li>
+            <li class="my-3"><a [routerLink]="['.']" class="text-muted">Política de Cookies</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <div class="row text-md-start text-center">
+      <!-- Texto de derechos reservados -->
+      <div class="col-md-8 mb-3 mb-md-0">
+        <p class="pb-0 mb-0 text-muted">© CREATIVE HOLDINGS GROUP</p>
+      </div>
+      <!-- Íconos de redes sociales -->
+      <div class="col-md-4 text-md-end">
+        <ul class="list-unstyled d-flex justify-content-center justify-content-md-end mb-0">
+          <li class="d-inline-block me-3">
+            <a [routerLink]="['.']"><i data-feather="instagram" class="icon icon-xs"></i></a>
+          </li>
+          <li class="d-inline-block me-3">
+            <a [routerLink]="['.']"><i data-feather="linkedin" class="icon icon-xs"></i></a>
+          </li>
+          <li class="d-inline-block">
+            <a [routerLink]="['.']"><i data-feather="youtube" class="icon icon-xs"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
