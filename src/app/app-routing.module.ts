@@ -2,6 +2,8 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ContactFormComponent } from './pages/home/contactform/contactform.component';
 import { PoliticasComponent } from './pages/home/politicas/politicas.component';
+import { TycComponent } from './pages/home/tyc/tyc.component';
+import { PoliticasPrivacidadComponent } from './pages/home/politicaprivacidad/politicaprivacidad.component';
 
 // guard
 // import { AuthGuard } from './core/guards/auth.guard';
@@ -36,6 +38,14 @@ const routes: Routes = [
   {
     path: 'Politicas',
     component:PoliticasComponent
+  },
+  {
+    path: 'Tyc',
+    component:TycComponent
+  },
+  {
+    path: 'PoliticasPrivacidad',
+    component:PoliticasPrivacidadComponent
   },
   {
     path: 'home',

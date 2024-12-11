@@ -15,15 +15,16 @@ import { SharedModule } from './shared/shared.module';
 import { AppComponent } from './app.component';
 import { ContactFormComponent } from './pages/home/contactform/contactform.component';
 import { PoliticasComponent } from './pages/home/politicas/politicas.component'
-//import { ModalComponent } from './pages/home/modal/modal.component';
-
+import { TycComponent } from './pages/home/tyc/tyc.component';
+import { PoliticasPrivacidadComponent } from './pages/home/politicaprivacidad/politicaprivacidad.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ContactFormComponent,
     PoliticasComponent,
-    //ModalComponent,
+    TycComponent,
+    PoliticasPrivacidadComponent,
     
   ],
   imports: [

@@ -55,6 +55,9 @@ import { ModalVideoComponent } from './modalvideo/modalvideo.component';
     SharedModule
     
     
+  ],
+  exports:[
+    FooterComponent,
   ]
 })
 export class HomeModule { }
