@@ -13,13 +13,15 @@ import { SharedModule } from './shared/shared.module';
 
 // component
 import { AppComponent } from './app.component';
-import { ContactFormComponent } from './pages/home/contactform/contactform.component';
+import { ContactFormComponent } from './pages/home/contactform/contactform.component'
+//import { ModalComponent } from './pages/home/modal/modal.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    ContactFormComponent
+    ContactFormComponent,
+    //ModalComponent,
     
   ],
   imports: [
@@ -33,6 +35,7 @@ import { ContactFormComponent } from './pages/home/contactform/contactform.compo
     AppRoutingModule,
     SharedModule
   ],
+  //exports:[ModalComponent],
  
   providers: [],
   bootstrap: [AppComponent]
