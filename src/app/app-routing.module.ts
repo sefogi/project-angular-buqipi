@@ -4,6 +4,7 @@ import { ContactFormComponent } from './pages/home/contactform/contactform.compo
 import { PoliticasComponent } from './pages/home/politicas/politicas.component';
 import { TycComponent } from './pages/home/tyc/tyc.component';
 import { PoliticasPrivacidadComponent } from './pages/home/politicaprivacidad/politicaprivacidad.component';
+import { PoliticasCookiesComponent } from './pages/home/politicascookies/politicascookies.component';
 
 // guard
 // import { AuthGuard } from './core/guards/auth.guard';
@@ -46,6 +47,10 @@ const routes: Routes = [
   {
     path: 'PoliticasPrivacidad',
     component:PoliticasPrivacidadComponent
+  },
+  {
+    path: 'PoliticasCookies',
+    component:PoliticasCookiesComponent
   },
   {
     path: 'home',

@@ -17,6 +17,7 @@ import { ContactFormComponent } from './pages/home/contactform/contactform.compo
 import { PoliticasComponent } from './pages/home/politicas/politicas.component'
 import { TycComponent } from './pages/home/tyc/tyc.component';
 import { PoliticasPrivacidadComponent } from './pages/home/politicaprivacidad/politicaprivacidad.component';
+import { PoliticasCookiesComponent } from './pages/home/politicascookies/politicascookies.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { PoliticasPrivacidadComponent } from './pages/home/politicaprivacidad/po
     PoliticasComponent,
     TycComponent,
     PoliticasPrivacidadComponent,
+    PoliticasCookiesComponent,
     
   ],
   imports: [
