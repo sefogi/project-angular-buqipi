@@ -6,8 +6,6 @@ import { TycComponent } from './pages/home/tyc/tyc.component';
 import { PoliticasPrivacidadComponent } from './pages/home/politicaprivacidad/politicaprivacidad.component';
 import { PoliticasCookiesComponent } from './pages/home/politicascookies/politicascookies.component';
 
-// guard
-// import { AuthGuard } from './core/guards/auth.guard';
 
 const routes: Routes = [
   {
@@ -17,7 +15,7 @@ const routes: Routes = [
   },
   {
     path: '#Producto',
-    // component:CtaComponent,
+    
     loadChildren: () => import('./pages/home/cta/cta.component').then((m) => m.CtaComponent)
   },
   // {
