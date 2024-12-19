@@ -13,7 +13,7 @@ interface TableRow {
 })
 export class Table2Component implements OnInit {
     isFullView = true;
-    tableHeaders: string[] = ['Buqipi', '/assets/logos/logo11.png', '/assets/logos/redforts.svg', '/assets/logos/amenitiz.svg', '/assets/logos/avirato.png', '/assets/logos/little.svg', '/assets/logos/smoobu.png', '/assets/logos/octare.png'];
+    tableHeaders: string[] = ['Buqipi', '/assets/logos/logo11.png', '/assets/logos/redforts.svg', '/assets/logos/amenitiz.svg', '/assets/logos/avirato.png', '/assets/logos/little.svg', '/assets/logos/smoobu-logo.webp', '/assets/logos/octare.png'];
     tableData: TableRow[] = [];
     displayedTableData: TableRow[] = [];
 

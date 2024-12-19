@@ -2,12 +2,12 @@
 $fixed-column-width: 200px;
 $fixed-column-background: #f0f0f0;
 
-// .tablebq {
-//   width: 100%;
-//   overflow-x: auto; 
+.tablebq {
+  width: 100%;
+  overflow-x: auto; 
 
   
-// }
+}
 .fixed-column {
   position: sticky;
   left: 0;
@@ -20,27 +20,38 @@ $fixed-column-background: #f0f0f0;
   }
 }
 
-
+.buqipiicon{
+  max-width: 5vh;
+    width: 100%;
+    height: auto;
+}
 
 
 .holiduicon {
     max-width: 12vh;
     width: 100%;
     height: auto;
-    
+    filter: grayscale(100%);
+   transition: filter 0.3s ease;
   }
 
   .aviratoicon {
-    max-width: 4vh;
+    max-width: 10vh;
     // Si quieres que también sea responsiva en el contenedor
     width: 100%;
     height: auto;
+    margin-bottom: 4px;
+    filter: grayscale(100%);
+  transition: filter 0.3s ease;
   }
   .amenitizicon {
     max-width: 10vh;
     // Si quieres que también sea responsiva en el contenedor
     width: 100%;
     height: auto;
+    margin-bottom: 4px;
+    filter: grayscale(100%);
+  transition: filter 0.3s ease;
   }
 
   .redfortsicon {
@@ -48,27 +59,39 @@ $fixed-column-background: #f0f0f0;
     // Si quieres que también sea responsiva en el contenedor
     width: 100%;
     height: auto;
+    margin-bottom: 4px;
+    filter: grayscale(100%);
+  transition: filter 0.3s ease;
   }
   
   .littlehicon {
+    max-width: 11vh;
+    // Si quieres que también sea responsiva en el contenedor
+    width: 100%;
+    height: auto;
+    margin-bottom: 4px;
+    filter: grayscale(100%);
+  transition: filter 0.3s ease;
+  }
+
+  .smoobuicon {
     max-width: 10vh;
     // Si quieres que también sea responsiva en el contenedor
     width: 100%;
     height: auto;
-  }
-
-  .smoobuicon {
-    max-width: 4vh;
-    // Si quieres que también sea responsiva en el contenedor
-    width: 100%;
-    height: auto;
+    margin-bottom: 3px;
+    filter: grayscale(100%);
+  transition: filter 0.3s ease;
   }
   
   .octareicon {
-    max-width: 5vh;
+    max-width: 10vh;
     // Si quieres que también sea responsiva en el contenedor
     width: 100%;
     height: auto;
+    margin-bottom: 4px;
+    filter: grayscale(100%);
+  transition: filter 0.3s ease;
   }
 
   $table-logo-size: 100px; // Tamaño máximo de ancho
