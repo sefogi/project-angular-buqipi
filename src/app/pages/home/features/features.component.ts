@@ -8,13 +8,24 @@ import { Feature } from '../home.model';
   templateUrl: './features.component.html',
   styleUrls: ['./features.component.scss']
 })
-export class FeaturesComponent implements OnInit {
+export class FeaturesComponent  {
 
-  @Input() features: Feature[] = [];
-
-  constructor () { }
-
-  ngOnInit(): void {
-  }
-
+  @Input() features: Feature[] = [
+    {
+      shapes: ['shape-class-1', 'shape-class-2'], // Clases CSS
+      title: 'Feature 1',
+      description: 'This is the description for feature 1.',
+      image: 'assets/images/feature1.png',
+      name: ''
+    },
+    {
+      shapes: ['shape-class-3', 'shape-class-4'],
+      title: 'Feature 2',
+      description: 'This is the description for feature 2.',
+      image: 'assets/images/feature2.png',
+      name: ''
+    },
+  ];
 }
+
+

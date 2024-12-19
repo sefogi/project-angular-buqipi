@@ -1,0 +1,39 @@
+// Variables para ajustes globales
+$svg-width: 150px;
+$animation-duration: 3s;
+
+// Estilos de las imágenes SVG
+.animated-svg-left,
+.animated-svg-right {
+  width: $svg-width; // Control del tamaño
+  opacity: 0.8; // Transparencia sutil
+  animation: float $animation-duration infinite ease-in-out;
+  z-index: 0; // Mantén las imágenes detrás del contenido
+  position: absolute;
+  top: 50%; // Centra verticalmente
+  transform: translateY(-50%); // Asegura alineación inicial
+}
+
+// Posicionamiento específico
+.animated-svg-left {
+  left: 0; // Alinea a la izquierda
+  transform: translate(-50%, -50%); // Ajusta alineación
+}
+
+.animated-svg-right {
+  right: 0; // Alinea a la derecha
+  transform: translate(50%, -50%); // Ajusta alineación
+}
+
+// Animación flotante
+@keyframes float {
+  0% {
+    transform: translateY(-10px); // Movimiento hacia arriba
+  }
+  50% {
+    transform: translateY(10px); // Movimiento hacia abajo
+  }
+  100% {
+    transform: translateY(-10px); // Regresa al inicio
+  }
+}

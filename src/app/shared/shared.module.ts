@@ -7,10 +7,10 @@ import { HerosModule } from './heros/heros.module';
 import { NavbarsModule } from './navbars/navbars.module';
 import { UiModule } from './ui/ui.module';
 import { WidgetsModule } from './widgets/widgets.module';
-
+//import { ModalComponent } from '../pages/home/modal/modal.component';
 
 @NgModule({
-  declarations: [
+  declarations: [//ModalComponent,
   ],
   imports: [
     CommonModule
@@ -21,6 +21,7 @@ import { WidgetsModule } from './widgets/widgets.module';
     UiModule,
     WidgetsModule,
     FooterModule,
+    //ModalComponent,
   ]
 })
 export class SharedModule { }

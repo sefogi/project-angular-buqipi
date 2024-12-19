@@ -15,6 +15,7 @@ import { NavbarTwoComponent } from './navbar-two/navbar-two.component';
 
 
 
+
 @NgModule({
   declarations: [
     MenuComponent,
@@ -22,6 +23,8 @@ import { NavbarTwoComponent } from './navbar-two/navbar-two.component';
     NavbarTwoComponent,
     NavbarThreeComponent,
     NavbarFourComponent,
+    
+  
   ],
   imports: [
     CommonModule,
@@ -36,6 +39,7 @@ import { NavbarTwoComponent } from './navbar-two/navbar-two.component';
     NavbarTwoComponent,
     NavbarThreeComponent,
     NavbarFourComponent
+    
   ]
 })
 export class NavbarsModule { }

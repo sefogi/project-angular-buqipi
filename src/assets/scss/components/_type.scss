@@ -1,7 +1,9 @@
 // 
 // type.scss
-//
 
+
+
+$primary-font: 'Baloo Bhaina 2', serif;
 
 .h1,
 .h2,
@@ -16,13 +18,15 @@ h4,
 h5,
 h6 {
     margin: 10px 0;
-    font-family: $font-family-sans-serif;
+    font-family:$primary-font;
     color: $gray-800;
     font-weight: 600;
 }
 
-p {
+p,span {
+    font-family: $primary-font;
     line-height: 1.6;
+    margin-top: 5px;
 }
 
 // Font sizes (Custom)
@@ -85,9 +89,9 @@ p {
 }
 
 // Font Family
-// .font-family-secondary {
-//     font-family: $font-family-secondary;
-// }
+.font-family-secondary {
+    font-family: $primary-font;
+}
 
 .fw-medium {
     font-weight: $font-weight-medium;

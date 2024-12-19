@@ -45,8 +45,8 @@ export class MenuComponent implements OnInit {
     return this.router.isActive(path, {
       matrixParams: 'ignored',
       queryParams: 'ignored',
-      paths: 'subset',
-      fragment: 'ignored'
+      paths: 'exact',
+      fragment: 'exact'
     });
   }
 
