@@ -1,4 +1,6 @@
+$fontfooter:'Baloo Bhaina 2';
 @media (max-width: 768px) {
+
     .navbar-brand img {
       max-height: 40px;
     }
@@ -7,3 +9,7 @@
       margin-bottom: 0.5rem;
     }
   }
+
+li{
+  font-family: $fontfooter;
+}

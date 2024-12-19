@@ -65,4 +65,22 @@ $fixed-column-background: #f0f0f0;
     width: 100%;
     height: auto;
   }
+
+  $table-logo-size: 100px; // Tamaño máximo de ancho
+  $table-logo-height: 50px; // Tamaño máximo de alto
+  
+  .table {
+    th {
+      text-align: center; // Centra el contenido dentro de las celdas
+      padding: 10px; // Espaciado uniforme
+  
+      img.logo {
+        display: block; // Trata la imagen como un bloque
+        margin: 0 auto; // Centra la imagen horizontalmente
+        max-width: $table-logo-size; // Ancho máximo para los logos
+        max-height: $table-logo-height; // Alto máximo para los logos
+        object-fit: contain; // Mantén las proporciones de las imágenes
+      }
+    }
+  }
   

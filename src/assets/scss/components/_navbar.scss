@@ -2,12 +2,14 @@
 // navbar.scss
 //
 // Bootstrap override - navbar
+$fontnav:'Baloo Bhaina 2', serif;
 .navbar {
     padding: 0;
     .navbar-nav {
         .nav-link {
+            font-family: $fontnav;
             font-weight: $font-weight-medium;
-            font-size: 0.9375rem;
+            font-size: 0.9999rem;
             [class^="icon-"] {
                 color: $link-color;
                 > svg [fill]:not([fill="none"]) {
@@ -34,7 +36,7 @@
         }
     }
     &.topnav-menu {
-        height: 70px;
+        height: 90px;
         .navbar-nav {
             & > .nav-item {
                 > .nav-link {
