@@ -2,18 +2,23 @@
 $fixed-column-width: 200px;
 $fixed-column-background: #f0f0f0;
 
-.tablebq {
-  width: 100%;
-  overflow-x: auto; 
+// .tablebq {
+//   width: 100%;
+//   overflow-x: auto; 
 
-  .fixed-column {
-    position: sticky;
-    left: 0;
-    z-index: 1;
-    background-color: #ffffff; 
+  
+// }
+.fixed-column {
+  position: sticky;
+  left: 0;
+  background-color: white; // O el color de fondo de tu tabla
+  z-index: 1; // Para que esté por encima del resto del contenido
+
+  &:nth-child(2) { // Anidación para la segunda columna
+    left: auto;
+    right: 0;
   }
 }
-
 
 
 

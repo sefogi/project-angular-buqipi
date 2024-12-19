@@ -11,7 +11,7 @@ import { UiModule } from 'src/app/shared/ui/ui.module';
 import { HomeRoutingModule } from './home-routing.module';
 
 // component
-import { AccountPagesComponent } from './account-pages/account-pages.component';
+// import { AccountPagesComponent } from './account-pages/account-pages.component';
 import { CtaComponent } from './cta/cta.component';
 import { FeaturesComponent } from './features/features.component';
 import { FooterComponent } from './footer/footer.component';
@@ -21,11 +21,12 @@ import { HomeComponent } from './home.component';
 // import { LandingPagesComponent } from './landing-pages/landing-pages.component';
 import {HeroElevenComponent} from './heros/hero-eleven/hero-eleven.component'
 import { TableComponent } from './table/table.component';
-// import {PricingComponent} from './pricing/pricing.component'
+import {PricingComponent} from './pricing/pricing.component'
 import { SectionendComponent } from './sectionend/sectionend.component';
 import { TestimonialComponent } from './testimonial/testimonial.component';
 import { ModalComponent } from './modal/modal.component';
 import { ModalVideoComponent } from './modalvideo/modalvideo.component';
+import { Table2Component } from './table2/table2.component';
 @NgModule({
   declarations: [
     TestimonialComponent,
@@ -38,9 +39,10 @@ import { ModalVideoComponent } from './modalvideo/modalvideo.component';
     FooterComponent,
     CtaComponent,
     TableComponent,
-    // PricingComponent,
+    PricingComponent,
     SectionendComponent,
-    AccountPagesComponent,
+    Table2Component
+    // AccountPagesComponent,
     // InnerPagesComponent,
     // LandingPagesComponent,
 
