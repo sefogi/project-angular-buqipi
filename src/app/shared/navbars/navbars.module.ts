@@ -12,7 +12,7 @@ import { NavbarFourComponent } from './navbar-four/navbar-four.component';
 import { NavbarOneComponent } from './navbar-one/navbar-one.component';
 import { NavbarThreeComponent } from './navbar-three/navbar-three.component';
 import { NavbarTwoComponent } from './navbar-two/navbar-two.component';
-
+import { NavbarFiveComponent } from './navbar-five/navbar-five.component';
 
 
 
@@ -23,6 +23,7 @@ import { NavbarTwoComponent } from './navbar-two/navbar-two.component';
     NavbarTwoComponent,
     NavbarThreeComponent,
     NavbarFourComponent,
+    NavbarFiveComponent
     
   
   ],
@@ -38,7 +39,8 @@ import { NavbarTwoComponent } from './navbar-two/navbar-two.component';
     NavbarOneComponent,
     NavbarTwoComponent,
     NavbarThreeComponent,
-    NavbarFourComponent
+    NavbarFourComponent,
+    NavbarFiveComponent
     
   ]
 })

@@ -13,20 +13,20 @@ import { SharedModule } from './shared/shared.module';
 
 // component
 import { AppComponent } from './app.component';
-import { ContactFormComponent } from './pages/home/contactform/contactform.component';
-import { PoliticasComponent } from './pages/home/politicas/politicas.component'
-import { TycComponent } from './pages/home/tyc/tyc.component';
-import { PoliticasPrivacidadComponent } from './pages/home/politicaprivacidad/politicaprivacidad.component';
-import { PoliticasCookiesComponent } from './pages/home/politicascookies/politicascookies.component';
+// import { ContactFormComponent } from './pages/home/contactform/contactform.component';
+// import { PoliticasComponent } from './pages/home/politicas/politicas.component'
+// import { TycComponent } from './pages/home/tyc/tyc.component';
+// import { PoliticasPrivacidadComponent } from './pages/home/politicaprivacidad/politicaprivacidad.component';
+// import { PoliticasCookiesComponent } from './pages/home/politicascookies/politicascookies.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ContactFormComponent,
-    PoliticasComponent,
-    TycComponent,
-    PoliticasPrivacidadComponent,
-    PoliticasCookiesComponent,
+    // ContactFormComponent,
+    // PoliticasComponent,
+    // TycComponent,
+    // PoliticasPrivacidadComponent,
+    // PoliticasCookiesComponent,
     
   ],
   imports: [
@@ -40,7 +40,7 @@ import { PoliticasCookiesComponent } from './pages/home/politicascookies/politic
     AppRoutingModule,
     SharedModule
   ],
-  //exports:[ModalComponent],
+  // exports:[ContactFormComponent],
  
   providers: [],
   bootstrap: [AppComponent]

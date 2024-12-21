@@ -7,6 +7,7 @@ import { HerosModule } from './heros/heros.module';
 import { NavbarsModule } from './navbars/navbars.module';
 import { UiModule } from './ui/ui.module';
 import { WidgetsModule } from './widgets/widgets.module';
+// import { ContactFormComponent } from '../pages/home/contactform/contactform.component';
 //import { ModalComponent } from '../pages/home/modal/modal.component';
 
 @NgModule({
@@ -21,6 +22,7 @@ import { WidgetsModule } from './widgets/widgets.module';
     UiModule,
     WidgetsModule,
     FooterModule,
+    // ContactFormComponent
     //ModalComponent,
   ]
 })

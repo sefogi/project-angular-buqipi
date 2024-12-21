@@ -1,0 +1,99 @@
+$fontmenu5:"Baloo bhaina 2";
+.navbar {
+    font-family: $fontmenu5;
+    font-weight: bold;
+    .navbar-brand {
+      display: flex;
+      align-items: center;
+  
+      .logo {
+        height: 50px; // Ajusta el tamaño del logo
+        margin-right: 8px;
+      }
+    }
+  
+    // Estilo para centrar los elementos de navegación
+    .navbar-nav-center {
+      margin: auto; // Centra los elementos en el espacio disponible
+      display: flex;
+      justify-content: center;
+  
+      .nav-link {
+        font-size: 16px;
+        color: #007bff; // Azul primario
+        padding: 0 15px; // Espaciado entre elementos
+        transition: color 0.3s ease;
+  
+        &:hover {
+          color: #0056b3; // Azul oscuro al pasar el cursor
+        }
+      }
+    }
+  
+    // Estilo del botón "Pruébalo"
+    .btn-pruebalo {
+      background-color: #ffd700; // Amarillo
+      color: black;
+      font-weight: bold;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 4px;
+  
+      &:hover {
+        background-color: #ffc107; // Hover amarillo más oscuro
+      }
+    }
+  
+    &.fixed-top {
+      position: fixed;
+      top: 0;
+      z-index: 1030;
+      width: 100%;
+    }
+  }
+  
+  // Ajustes responsivos para dispositivos móviles
+  @media (max-width: 991px) {
+    .navbar {
+      
+
+      .navbar-collapse {
+        background-color: #ffffff; // Fondo blanco para el menú desplegable
+        padding: 1rem;
+      }
+  
+      .navbar-nav-center {
+        flex-direction: column; // Cambia los elementos a columna
+        text-align: center;
+  
+        .nav-link {
+            padding: 0.5rem 1rem; // Add left padding for alignment
+            text-align: left; // Align text to the left
+        }
+      }
+  
+      .btn-pruebalo {
+        display:block;
+        width: 100%;
+        margin-top: 1rem 0;
+      }
+
+      .d-flex{
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+      }
+
+      .text-cyanbuqipi{
+        margin-bottom: 1rem;
+      }
+
+
+    }
+  }
+  
+  // Ajuste del padding superior del body para evitar que el contenido quede oculto
+  body {
+    padding-top: 70px; // Ajustar según la altura de la barra
+  }
+  

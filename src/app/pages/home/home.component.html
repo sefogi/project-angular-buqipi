@@ -1,20 +1,21 @@
 <div class="bg-gradient">
     <!-- navbar -->
-    <app-navbar-3 navClass="bg-white navbar-light zindex-10" [fixedWidth]="true" [sticky]="true"
-        ></app-navbar-3>
+    <app-navbar-5 navClass="bg-white navbar-light zindex-10" [fixedWidth]="true" [sticky]="true"
+        ></app-navbar-5>
     <!-- hero -->
     <app-home-hero></app-home-hero>
    
 </div>
-<div class="mt-1">
 <!-- carrousel logos -->
-<app-home-cta class="p-3"></app-home-cta>
+<div class="mt-1">
+
+<app-home-cta></app-home-cta>
 </div>
 <app-home-features [features]="features"></app-home-features>
 <app-home-pricing></app-home-pricing>
 <!-- tabla de comparacion -->
 <app-home-table></app-home-table>
-<app-home-table2></app-home-table2>
+<!--<app-home-table2></app-home-table2>
 <!-- <app-home-landing-pages-demo [landingDemos]="landingDemos"></app-home-landing-pages-demo> 
 <!--<app-home-inner-pages-demo [pagesDemos]="pagesDemos"></app-home-inner-pages-demo>-->
 <!--<app-home-account-pages-demo [authDemos]="authDemos"></app-home-account-pages-demo>
@@ -22,6 +23,7 @@
 <app-home-sectionend></app-home-sectionend>
 <!-- footer -->
 <app-home-footer></app-home-footer>
+<app-home-modal></app-home-modal>
 <!-- back to top -->
 <a class="btn btn-soft-cyanbuqipi shadow-none btn-icon btn-back-to-top" href="javascript:void(0)" appScrollToTop><i
         class="icon-xxs" data-feather="arrow-up"></i></a>

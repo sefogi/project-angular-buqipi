@@ -4,7 +4,7 @@ import { HomeComponent } from './home.component';
 import { CtaComponent } from './cta/cta.component';
 import {FeaturesComponent} from './features/features.component'
 import {PricingComponent} from './pricing/pricing.component'
-import { ContactFormComponent } from './contactform/contactform.component';
+import { ContactPageComponent } from './contactpage/contactpage.component';
 import { PoliticasComponent } from './politicas/politicas.component';
 import { TycComponent } from './tyc/tyc.component';
 import { PoliticasPrivacidadComponent } from './politicaprivacidad/politicaprivacidad.component';
@@ -13,7 +13,7 @@ const routes: Routes = [
   { path: '#Producto', component: CtaComponent },
   { path: '#Caracteristicas', component: FeaturesComponent },
   { path: '#Precios', component: PricingComponent },
-  {path: '/Contact', component: ContactFormComponent},
+  {path: '/Contact', component: ContactPageComponent},
   {path: '/Politicas', component: PoliticasComponent},
   {path: '/Tyc', component: TycComponent},
   {path: '/PoliticasPrivacidad', component: PoliticasPrivacidadComponent},

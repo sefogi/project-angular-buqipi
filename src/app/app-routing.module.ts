@@ -5,6 +5,7 @@ import { PoliticasComponent } from './pages/home/politicas/politicas.component';
 import { TycComponent } from './pages/home/tyc/tyc.component';
 import { PoliticasPrivacidadComponent } from './pages/home/politicaprivacidad/politicaprivacidad.component';
 import { PoliticasCookiesComponent } from './pages/home/politicascookies/politicascookies.component';
+import { ContactPageComponent } from './pages/home/contactpage/contactpage.component';
 
 
 const routes: Routes = [
@@ -32,7 +33,7 @@ const routes: Routes = [
   },
   {
     path: 'Contacto',
-    component:ContactFormComponent
+    component:ContactPageComponent
   },
   {
     path: 'Politicas',

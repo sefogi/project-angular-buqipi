@@ -9,6 +9,7 @@ import { NavbarsModule } from 'src/app/shared/navbars/navbars.module';
 import { SharedModule } from 'src/app/shared/shared.module';
 import { UiModule } from 'src/app/shared/ui/ui.module';
 import { HomeRoutingModule } from './home-routing.module';
+import { ReactiveFormsModule } from '@angular/forms';
 
 // component
 // import { AccountPagesComponent } from './account-pages/account-pages.component';
@@ -27,6 +28,12 @@ import { TestimonialComponent } from './testimonial/testimonial.component';
 import { ModalComponent } from './modal/modal.component';
 import { ModalVideoComponent } from './modalvideo/modalvideo.component';
 import { Table2Component } from './table2/table2.component';
+import { ContactPageComponent } from './contactpage/contactpage.component';
+import { ContactFormComponent } from './contactform/contactform.component';
+import { PoliticasComponent } from './politicas/politicas.component';
+import { TycComponent } from './tyc/tyc.component';
+import { PoliticasPrivacidadComponent } from './politicaprivacidad/politicaprivacidad.component';
+import { PoliticasCookiesComponent } from './politicascookies/politicascookies.component';
 @NgModule({
   declarations: [
     TestimonialComponent,
@@ -41,7 +48,14 @@ import { Table2Component } from './table2/table2.component';
     TableComponent,
     PricingComponent,
     SectionendComponent,
-    Table2Component
+    Table2Component,
+    ContactPageComponent,
+    ContactFormComponent,
+    PoliticasComponent,
+    TycComponent,
+    PoliticasPrivacidadComponent,
+    PoliticasCookiesComponent
+    
     // AccountPagesComponent,
     // InnerPagesComponent,
     // LandingPagesComponent,
@@ -54,12 +68,14 @@ import { Table2Component } from './table2/table2.component';
     NavbarsModule,
     UiModule,
     HomeRoutingModule,
-    SharedModule
+    SharedModule,
+    ReactiveFormsModule
     
     
   ],
   exports:[
     FooterComponent,
+    // ContactFormComponent
   ]
 })
 export class HomeModule { }
