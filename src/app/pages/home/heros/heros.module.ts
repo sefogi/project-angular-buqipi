@@ -7,8 +7,8 @@ import { NgxTypedJsModule } from 'ngx-typed-js';
 import { SwiperModule } from 'swiper/angular';
 
 // module
-import { UiModule } from '../ui/ui.module';
-import { WidgetsModule } from '../widgets/widgets.module';
+import { UiModule } from 'src/app/shared/ui/ui.module';
+import { WidgetsModule } from 'src/app/shared/widgets/widgets.module';
 
 // component
 import { HeroEightComponent } from './hero-eight/hero-eight.component';
@@ -23,7 +23,7 @@ import { HeroTenComponent } from './hero-ten/hero-ten.component';
 import { HeroThreeComponent } from './hero-three/hero-three.component';
 import { HeroTweleveComponent } from './hero-tweleve/hero-tweleve.component';
 import { HeroTwoComponent } from './hero-two/hero-two.component';
-
+import { ModalComponent } from '../modal/modal.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +38,8 @@ import { HeroTwoComponent } from './hero-two/hero-two.component';
     HeroNineComponent,
     HeroTenComponent,
     HeroElevenComponent,
-    HeroTweleveComponent
+    HeroTweleveComponent,
+    ModalComponent,
   ],
   imports: [
     CommonModule,
@@ -62,7 +63,8 @@ import { HeroTwoComponent } from './hero-two/hero-two.component';
     HeroNineComponent,
     HeroTenComponent,
     HeroElevenComponent,
-    HeroTweleveComponent
+    HeroTweleveComponent,
+    ModalComponent,
   ]
 })
 export class HerosModule { }

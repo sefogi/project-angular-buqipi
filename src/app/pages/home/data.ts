@@ -54,68 +54,68 @@ const LANDINGDEMOS: Demo[] = [
     },
 ];
 
-const PAGESDEMOS: Demo[] = [
-    {
-        image: 'assets/images/demo/pages/company.jpg',
-        url: '/pages/company',
-        name: 'Company',
-    },
-    {
-        image: 'assets/images/demo/pages/contact.jpg',
-        url: '/pages/contact',
-        name: 'Contact',
-    },
-    {
-        image: 'assets/images/demo/pages/career.jpg',
-        url: '/pages/career',
-        name: 'Career',
-    },
-    {
-        image: 'assets/images/demo/pages/blog.jpg',
-        url: '/pages/blog',
-        name: 'Blog',
-    },
-    {
-        image: 'assets/images/demo/pages/blog-post.jpg',
-        url: '/pages/blog/post',
-        name: 'Blog-Post',
-    },
-    {
-        image: 'assets/images/demo/pages/dashboard.jpg',
-        url: '/pages/account/dashboard',
-        name: 'Dashboard',
-    },
-    {
-        image: 'assets/images/demo/pages/settings.jpg',
-        url: '/pages/account/settings',
-        name: 'Settings',
-    },
-    {
-        image: 'assets/images/demo/pages/portfolio-grid.jpg',
-        url: '/pages/portfolio/grid',
-        name: 'Portfolio Grid',
-    },
-    {
-        image: 'assets/images/demo/pages/portfolio-masonry.jpg',
-        url: '/pages/portfolio/masonry',
-        name: 'Portfolio Masonry',
-    },
-    {
-        image: 'assets/images/demo/pages/portfolio-item.jpg',
-        url: '/pages/portfolio/item',
-        name: 'Portfolio-item',
-    },
-    {
-        image: 'assets/images/demo/pages/pricing.jpg',
-        url: '/pages/pricing',
-        name: 'Pricing',
-    },
-    {
-        image: 'assets/images/demo/pages/help.jpg',
-        url: '/pages/help',
-        name: 'Help',
-    },
-];
+// const PAGESDEMOS: Demo[] = [
+//     {
+//         image: 'assets/images/demo/pages/company.jpg',
+//         url: '/pages/company',
+//         name: 'Company',
+//     },
+//     {
+//         image: 'assets/images/demo/pages/contact.jpg',
+//         url: '/pages/contact',
+//         name: 'Contact',
+//     },
+//     {
+//         image: 'assets/images/demo/pages/career.jpg',
+//         url: '/pages/career',
+//         name: 'Career',
+//     },
+//     {
+//         image: 'assets/images/demo/pages/blog.jpg',
+//         url: '/pages/blog',
+//         name: 'Blog',
+//     },
+//     {
+//         image: 'assets/images/demo/pages/blog-post.jpg',
+//         url: '/pages/blog/post',
+//         name: 'Blog-Post',
+//     },
+//     {
+//         image: 'assets/images/demo/pages/dashboard.jpg',
+//         url: '/pages/account/dashboard',
+//         name: 'Dashboard',
+//     },
+//     {
+//         image: 'assets/images/demo/pages/settings.jpg',
+//         url: '/pages/account/settings',
+//         name: 'Settings',
+//     },
+//     {
+//         image: 'assets/images/demo/pages/portfolio-grid.jpg',
+//         url: '/pages/portfolio/grid',
+//         name: 'Portfolio Grid',
+//     },
+//     {
+//         image: 'assets/images/demo/pages/portfolio-masonry.jpg',
+//         url: '/pages/portfolio/masonry',
+//         name: 'Portfolio Masonry',
+//     },
+//     {
+//         image: 'assets/images/demo/pages/portfolio-item.jpg',
+//         url: '/pages/portfolio/item',
+//         name: 'Portfolio-item',
+//     },
+//     {
+//         image: 'assets/images/demo/pages/pricing.jpg',
+//         url: '/pages/pricing',
+//         name: 'Pricing',
+//     },
+//     {
+//         image: 'assets/images/demo/pages/help.jpg',
+//         url: '/pages/help',
+//         name: 'Help',
+//     },
+// ];
 
 const AUTHDEMOS: Demo[] = [
     {
@@ -140,42 +140,33 @@ const AUTHDEMOS: Demo[] = [
     }
 ];
 
-const FEATURES: Feature[] = [
+export const features: Feature[] = [
     {
-        icon: 'smartphone',
-        name: 'Fully Responsive',
+        icon: '',
+        name: '',
+        shapes: ['shape1', 'shape2'],
+        title: 'Vista general',
+        description: 'La plataforma perfecta para transformar y simplificar la gestión de tu negocio.',
+        image: 'assets/images/features/app3.png',
     },
     {
         icon: 'layout',
-        name: 'Cross-browser compatible',
+        name: '',
+        shapes: ['shape3', 'shape4'],
+        title: "Planing y Reservas",
+        description: 'Visualiza tu agenda de reservas de forma clara y organizada, para que nunca pierdas de vista tu disponibilidad.',
+        image: 'assets/images/features/app4.png'
     },
     {
-        icon: 'bold',
-        name: 'Based on latest Bootstrap 5.1.3',
-    },
-    {
-        name: 'Sass Powered',
-    },
-    {
-        icon: 'moon',
-        name: 'Easy to customize',
-    },
-    {
-        icon: 'smile',
-        name: 'Developer Friendly',
-    },
-    {
-        icon: 'code',
-        name: 'Clean & Easy to Understand Code',
-    },
-    {
-        icon: 'image',
-        name: 'Premium SVG Icons',
-    },
-    {
-        icon: 'check',
-        name: 'Free Updates',
-    },
+        icon: '',
+        name: '',
+        shapes: ['shape5', 'shape6'],
+        title: 'Tarifas e Inventario',
+        description: "Lleva un control detallado de tus productos o servicios, evitando faltantes y sobrecargas.",
+        image: 'assets/images/features/app4.png',
+    }
+    
+    
 ];
 
-export { LANDINGDEMOS, PAGESDEMOS, AUTHDEMOS, FEATURES }
+export { LANDINGDEMOS, AUTHDEMOS, Feature }

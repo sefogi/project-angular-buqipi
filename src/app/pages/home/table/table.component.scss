@@ -1,0 +1,114 @@
+
+$fixed-column-width: 200px;
+$fixed-column-background: #f0f0f0;
+
+.tablebq {
+  width: 100%;
+  overflow-x: auto; 
+
+  
+}
+.fixed-column {
+  position: sticky;
+  left: 0;
+  background-color: white; // O el color de fondo de tu tabla
+  z-index: 1; // Para que esté por encima del resto del contenido
+
+  &:nth-child(2) { // Anidación para la segunda columna
+    left: auto;
+    right: 0;
+  }
+}
+
+.buqipiicon{
+  max-width: 5vh;
+    width: 100%;
+    height: auto;
+}
+
+
+.holiduicon {
+    max-width: 12vh;
+    width: 100%;
+    height: auto;
+    filter: grayscale(100%);
+   transition: filter 0.3s ease;
+  }
+
+  .aviratoicon {
+    max-width: 10vh;
+    // Si quieres que también sea responsiva en el contenedor
+    width: 100%;
+    height: auto;
+    margin-bottom: 4px;
+    filter: grayscale(100%);
+  transition: filter 0.3s ease;
+  }
+  .amenitizicon {
+    max-width: 10vh;
+    // Si quieres que también sea responsiva en el contenedor
+    width: 100%;
+    height: auto;
+    margin-bottom: 4px;
+    filter: grayscale(100%);
+  transition: filter 0.3s ease;
+  }
+
+  .redfortsicon {
+    max-width: 10vh;
+    // Si quieres que también sea responsiva en el contenedor
+    width: 100%;
+    height: auto;
+    margin-bottom: 4px;
+    filter: grayscale(100%);
+  transition: filter 0.3s ease;
+  }
+  
+  .littlehicon {
+    max-width: 11vh;
+    // Si quieres que también sea responsiva en el contenedor
+    width: 100%;
+    height: auto;
+    margin-bottom: 4px;
+    filter: grayscale(100%);
+  transition: filter 0.3s ease;
+  }
+
+  .smoobuicon {
+    max-width: 10vh;
+    // Si quieres que también sea responsiva en el contenedor
+    width: 100%;
+    height: auto;
+    margin-bottom: 3px;
+    filter: grayscale(100%);
+  transition: filter 0.3s ease;
+  }
+  
+  .octareicon {
+    max-width: 10vh;
+    // Si quieres que también sea responsiva en el contenedor
+    width: 100%;
+    height: auto;
+    margin-bottom: 4px;
+    filter: grayscale(100%);
+  transition: filter 0.3s ease;
+  }
+
+  $table-logo-size: 100px; // Tamaño máximo de ancho
+  $table-logo-height: 50px; // Tamaño máximo de alto
+  
+  .table {
+    th {
+      text-align: center; // Centra el contenido dentro de las celdas
+      padding: 10px; // Espaciado uniforme
+  
+      img.logo {
+        display: block; // Trata la imagen como un bloque
+        margin: 0 auto; // Centra la imagen horizontalmente
+        max-width: $table-logo-size; // Ancho máximo para los logos
+        max-height: $table-logo-height; // Alto máximo para los logos
+        object-fit: contain; // Mantén las proporciones de las imágenes
+      }
+    }
+  }
+  

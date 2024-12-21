@@ -6,7 +6,7 @@ import feather from 'feather-icons';
 import { Demo, Feature } from './home.model';
 
 // data
-import { AUTHDEMOS, FEATURES, LANDINGDEMOS, PAGESDEMOS } from './data';
+import { AUTHDEMOS, features, LANDINGDEMOS } from './data';
 
 @Component({
   selector: 'app-home-page',
@@ -34,9 +34,9 @@ export class HomeComponent implements OnInit {
 
   _fetchData(): void {
     this.landingDemos = LANDINGDEMOS;
-    this.pagesDemos = PAGESDEMOS;
+    // this.pagesDemos = PAGESDEMOS;
     this.authDemos = AUTHDEMOS;
-    this.features = FEATURES;
+    this.features = features;
   }
 
 }

@@ -1,0 +1,29 @@
+
+
+
+<div class="table-container table-responsive">
+    <table class="table small-font">
+      <thead>
+        <tr>
+          <th class="fixed-column" scope="col">Funcionalidades</th>
+          <th *ngFor="let header of tableHeaders" scope="col">
+            <ng-container *ngIf="header.startsWith('/assets/'); else textHeader">
+              <img [src]="header" class="img-fluid icon" alt="...">
+            </ng-container>
+            <ng-template #textHeader>{{ header }}</ng-template>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let row of displayedTableData">
+          <td class="fixed-column" [ngClass]="{'important-row': row.important}">{{ row.feature }}</td>
+          <td *ngFor="let value of row.values; let idx = index" [ngClass]="{'important-cell': row.important}">
+            {{ value }}
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <button (click)="toggleView()">
+      Mostrar {{ isFullView ? 'solo características importantes' : 'todas las características' }}
+    </button>
+  </div>

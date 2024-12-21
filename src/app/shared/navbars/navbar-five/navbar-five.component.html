@@ -1,0 +1,49 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top topnav-menu">
+    <div class="container">
+      <!-- Logo -->
+      <a class="navbar-brand" href="#">
+        <img src="assets/images/logo.png" alt="Logo" class="logo">
+        
+      </a>
+  
+      <!-- Botón Hamburguesa -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <!-- Links de Navegación -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav navbar-nav-center">
+            <li class="nav-item">
+                <a class="nav-link top-nav-link-ref" [routerLink]="'/'" fragment="Producto" routerLinkActive="active">Producto</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link top-nav-link-ref" [routerLink]="'/'" fragment="Caracteristicas"  routerLinkActive="active">Características</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link top-nav-link-ref" [routerLink]="'/'" fragment="Precios"  routerLinkActive="active">Precios</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-cyanbuqipi top-nav-link-ref" [routerLink]="'/Contacto'" routerLinkActive="active" >Contacto</a>
+            </li>
+        </ul>
+  
+        <!-- Botón de Iniciar Sesión y "Pruébalo" -->
+        <div class="d-flex align-items-center nav-link">
+          <a href="https://sso.creativetecno.com/u/login/identifier?state=hKFo2SBhakJ6UWkzUWVjUHRFUGRUUVVIQXpNV3FuZUpPcFdGNaFur3VuaXZlcnNhbC1sb2dpbqN0aWTZIGN2ekVpdjU3YWdfOUVxanlhZWFNeGJaSnpsQlhMdWFBo2NpZNkgUzNWSmJmS2RZc3J1WXpUemNFZmN0cXpQajFNek5oREM" class="text-cyanbuqipi me-3 ">Iniciar sesión</a>
+          <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#calendlyModal">
+            Pruébalo
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+  

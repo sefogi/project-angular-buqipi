@@ -1,36 +1,151 @@
-<section class="my-lg-5 py-5 py-sm-7 bg-gradient2 position-relative" data-aos="fade-up">
-    <div class="divider top d-none d-sm-block"></div>
+<section id="Producto" class="section py-5 features-2 position-relative overflow-hidden">
     <div class="container">
         <div class="row">
             <div class="col text-center">
-                <span class="badge rounded-pill badge-soft-primary px-2 py-1">Features</span>
-                <h1 class="display-4 fw-semibold">Why Choose Prompt</h1>
-                <p class="text-secondary mx-auto">A modern design, fresh look and feel</p>
+                <span class="badge rounded-pill badge-soft-primary px-2 py-1"></span>
+                <h1 class="display-5 fw-semibold">Conoce las caracteristicas de nuestro Channel Manager</h1>
+                <p class="text-muted mx-auto">
+                <span class="text-primary fw-bold"></span> 
+                </p>
             </div>
         </div>
+        <div class="row my-5">
 
-        <div class="row mt-5">
-            <div class="col-lg-4" data-aos="fade-up" data-duration="600" *ngFor="let feature of features">
-                <div class="card shadow-sm">
-                    <div class="card-body p-2">
-                        <div class="d-flex align-items-center">
-                            <span
-                                class="bg-soft-primary avatar avatar-sm rounded-lg icon icon-with-bg icon-xs text-primary me-3 flex-shrink-0">
-                                <i [attr.data-feather]="feature.icon" class="icon-dual-primary"
-                                    *ngIf="feature.icon"></i>
+            <div class="col-lg-4 feature" *ngFor="let feature of features;let i=index">
+                <div class="card bg-gray-50 shadow-none shapes" data-aos="fade-up"
+                    [attr.data-aos-duration]="(i + (1+i)) * 100">
+                    <div *ngFor="let shape of feature.shapes" [class]="shape"></div>
+                    <div class="card-body text-center py-0">
+                        <h3 class="fw-semibold mt-0">{{feature.title}}</h3>
+                        <p class="fs-14">
+                            {{feature.description}}
+                        </p>
 
-                                <span class="fw-bolder" *ngIf="!feature.icon">{{feature.name[0]}}</span>
-
-
-                            </span>
-
-                            <div class="flex-grow-1">
-                                <h5 class="m-0">{{feature.name}}</h5>
-                            </div>
+                        <div class="px-2 mt-3">
+                            <img [src]="feature.image" alt="" class="img-fluid mt-2" />
                         </div>
                     </div>
                 </div>
             </div>
+
         </div>
     </div>
+
+</section >
+<section  class="section py-4 py-sm-8 bg-gradient3 position-relative" data-aos="fade-up">
+    <div class="divider top d-none d-sm-block"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-5">
+                <h5 class="fs-15 text-muted pt-3">CÓNECTIVIDAD CON CANALES DE VENTA</h5>
+                <h2 class="display-3 fw-medium mb-3">Conéctalos <span class="highlight highlight-info d-inline-block">todos.</span></h2>
+                <p class="mb-5">
+                    Gracias a los acuerdos e integraciones con las diferentes plataformas, podrás sincronizar tarifas, disponibilidad y contenido entre todas las plataformas.
+                </p>
+                <a [routerLink]="['.']" class="btn btn-azulbuqipi" data-bs-toggle="modal" data-bs-target="#calendlyModal">
+                    Conoce más <i class="icon-xs ms-2" data-feather="arrow-right"></i>
+                </a>
+            </div>
+            <div class="col-lg-6  offset-lg-1">
+                <img src="assets/images/features/buqipi_dash/animacionbq.gif" alt=""
+                    class="img-fluid d-block mx-auto mt-4 mt-lg-0" data-aos="fade-left"
+                    data-aos-duration="1000" />
+            </div>
+        </div>
+
+        
+    </div>
+    
 </section>
+
+<section class="pt-lg-6 pt-4 pb-lg-6 pb-5  position-relative overflow-hidden">
+    <div class="container">
+        
+
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <div class="bg-white p-2 rounded mb-lg-0 mb-3" data-aos="fade-right"
+                    data-aos-duration="1500">
+                    <img src="assets/animacions/anmcobro.gif" alt="" class="img-fluid" />
+                </div>
+            </div>
+
+            <div class="col-lg-5 offset-lg-1">
+                <div class="mt-4 mt-lg-0">
+                    <h5 class="text-muted mx-auto mb-1 pb-2">CARGOS AUTOMÁTICOS</h5>
+                    <h2 class="display-3 fw-medium mb-3">Céntrate en lo <span class="highlight highlight-info d-inline-block">importante.</span></h2>
+                    <p class="text-muted mx-auto mb-4 pb-3">
+                        Programa y automatiza cobros, envío de links de pago y mucho más. Ahora, con Tap to Pay, convierte tu smartphone en un TPV.
+                    </p>
+                    <a [routerLink]="['']" class="btn btn-outline-azulbuqipi" data-bs-toggle="modal" data-bs-target="#calendlyModal">
+                        Conoce más <i class="icon-xxs ms-1" data-feather="arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        
+    </div>
+</section>
+<section class="section py-4 py-sm-8 bg-gradient3 position-relative">
+    
+    <div class="container">
+    <div class="row align-items-center mb-3 pb-lg-5">
+        <div class="col-lg-5">
+            <div class="mt-4 mb-lg-0">
+                <h5 class="text-muted mx-auto mb-1 pb-2">CHECK-IN ONLINE</h5>
+                    <h2 class="display-2 fw-medium mb-3">+ <span class="highlight highlight-info d-inline-block">Fácil </span>
+                        
+                    </h2>
+                    <h2 class="display-2 fw-medium mb-3">+ <span class=" d-inline-block">Seguro </span>
+                        
+                    </h2>
+                <p class="text-muted mx-auto mb-4 pb-3">
+                    Envía un enlace al cliente y mejorarás en un 40% los tiempos de Check-In. ¿Tienes una recepción física?, conectamos con Wacom para proporcionar un proceso de firma seguro.
+                </p>
+                <a [routerLink]="['.']" class="btn btn-outline-azulbuqipi" data-bs-toggle="modal" data-bs-target="#calendlyModal">
+                    Conoce más <i class="icon-xxs ms-1" data-feather="arrow-right"></i>
+                </a>
+            </div>
+        </div>
+        <div class="col-lg-5 offset-lg-1">
+            <img src="assets/animacions/anmfacil.gif" alt="" class="img-fluid m-lg-5" data-aos="fade-up"
+                data-aos-duration="1000" />
+        </div>
+        
+    </div>
+    </div>
+</section>
+<section class="pt-lg-6 pt-4 pb-lg-6 pb-5  position-relative overflow-hidden">
+    <div class="container">
+        
+
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <div class="bg-white p-2 rounded mb-lg-0 mb-3" data-aos="fade-up"
+                    data-aos-duration="1500">
+                    <img src="assets/animacions/ils_21.svg" alt="" class="img-fluid" />
+                </div>
+            </div>
+
+            <div class="col-lg-5 offset-lg-1">
+                <div class="mt-4 mt-lg-0">
+                    
+                    <h2 class="display-2 fw-medium mb-3">¿Por qué <span class="highlight highlight-info d-inline-block">escogernos?</span></h2>
+                    <p class="text-muted mx-auto mb-4 pb-3">
+                        Sistema intuitivo, seguro, completo y con infinitas posibilidades para tu establecimiento.
+                    </p>
+                    <a [routerLink]="['']" class="btn btn-outline-azulbuqipi" data-bs-toggle="modal" data-bs-target="#calendlyModal">
+                        Conoce más <i class="icon-xxs ms-1" data-feather="arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        
+    </div>
+</section>
+
+
+
+

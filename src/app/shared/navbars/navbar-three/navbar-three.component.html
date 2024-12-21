@@ -1,10 +1,12 @@
 <header>
+    
     <nav class="navbar navbar-expand-lg topnav-menu" [class]="navClass" [attr.id]="sticky ? 'sticky' : 'navbar-3'"
         appStickyNav>
         <div [class]="fixedWidth ? 'container' : 'container-fluid'">
             <a class="navbar-brand" routerLink="/">
-                <img src="assets/images/logo.png" height="30" class="d-inline-block align-top" alt="" />
+                <img src="assets/images/logo.png" height="50" class="d-inline-block align-top" alt="" />
             </a>
+            
             <a href="javascript:void(0)" class="navbar-toggler" (click)="collapse.toggle()"
                 [attr.aria-expanded]="showMobileMenu" aria-controls="topnav-menu-content3"
                 aria-label="Toggle navigation">
@@ -20,15 +22,17 @@
                 <ul class="navbar-nav">
 
                     <li class="nav-item">
-                        <a class="btn btn-sm me-2 fw-medium fs-15 shadow-none text-dark" [routerLink]="['/auth/login']"
-                            *ngIf="!loggedInUser">Login</a>
-                        <a class="btn btn-sm me-2 fw-medium fs-15 shadow-none text-dark" [routerLink]="['/auth/logout']"
-                            *ngIf="loggedInUser">Logout</a>
+                        <a class="btn btn-sm me-2 fw-medium fs-15 shadow-none text-cyanbuqipi" href="https://sso.creativetecno.com/u/login/identifier?state=hKFo2SBhakJ6UWkzUWVjUHRFUGRUUVVIQXpNV3FuZUpPcFdGNaFur3VuaXZlcnNhbC1sb2dpbqN0aWTZIGN2ekVpdjU3YWdfOUVxanlhZWFNeGJaSnpsQlhMdWFBo2NpZNkgUzNWSmJmS2RZc3J1WXpUemNFZmN0cXpQajFNek5oREM"
+                            *ngIf="!loggedInUser">Iniciar sesión</a>
+                        <a class="btn btn-sm me-2 fw-medium fs-15 shadow-none text-dark" [routerLink]="['/']"
+                            *ngIf="loggedInUser"></a>
                     </li>
                     <li class="nav-item">
-                        <a class="btn" [class]="ctaButtonClass ? ctaButtonClass : 'btn-soft-primary'"
-                            [routerLink]="['/']">Download</a>
-                    </li>
+                        
+                        <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#calendlyModal">
+                            Pruébalo
+                          </button>
+                          
                 </ul>
 
             </div>
