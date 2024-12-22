@@ -2,6 +2,7 @@ $fontmenu5:"Baloo bhaina 2";
 .navbar {
     font-family: $fontmenu5;
     font-weight: bold;
+    max-width: 100dvw;
     .navbar-brand {
       display: flex;
       align-items: center;
@@ -20,7 +21,7 @@ $fontmenu5:"Baloo bhaina 2";
   
       .nav-link {
         font-size: 16px;
-        color: #007bff; // Azul primario
+        color: #219EBC; // Azul primario
         padding: 0 15px; // Espaciado entre elementos
         transition: color 0.3s ease;
   
@@ -60,6 +61,7 @@ $fontmenu5:"Baloo bhaina 2";
       .navbar-collapse {
         background-color: #ffffff; // Fondo blanco para el menú desplegable
         padding: 1rem;
+        margin-top: 2px;
       }
   
       .navbar-nav-center {
