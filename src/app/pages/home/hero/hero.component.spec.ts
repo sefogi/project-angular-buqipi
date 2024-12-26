@@ -1,5 +1,4 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { HeroComponent } from './hero.component';
 
 describe('HeroComponent', () => {
@@ -21,5 +20,20 @@ describe('HeroComponent', () => {
 
   it('should create', () => {
     expect(component).toBeTruthy();
+  });
+
+  it('should have a defined component', () => {
+    expect(component).toBeDefined();
+  });
+
+  it('should have a selector `app-pricing-hero`', () => {
+    const compiled = fixture.nativeElement;
+    expect(compiled.querySelector('app-pricing-hero')).not.toBeNull();
+  });
+
+  it('should call ngOnInit', () => {
+    spyOn(component, 'ngOnInit');
+    component.ngOnInit();
+    expect(component.ngOnInit).toHaveBeenCalled();
   });
 });

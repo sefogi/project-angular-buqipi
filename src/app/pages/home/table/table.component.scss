@@ -28,7 +28,7 @@ $fixed-column-background: #f0f0f0;
 
 
 .holiduicon {
-    max-width: 12vh;
+    max-width: 11vh;
     width: 100%;
     height: auto;
     filter: grayscale(100%);
@@ -36,7 +36,7 @@ $fixed-column-background: #f0f0f0;
   }
 
   .aviratoicon {
-    max-width: 10vh;
+    max-width: 9vh;
     // Si quieres que también sea responsiva en el contenedor
     width: 100%;
     height: auto;
@@ -59,7 +59,7 @@ $fixed-column-background: #f0f0f0;
     // Si quieres que también sea responsiva en el contenedor
     width: 100%;
     height: auto;
-    margin-bottom: 4px;
+    margin-bottom: 3px;
     filter: grayscale(100%);
   transition: filter 0.3s ease;
   }
@@ -101,6 +101,7 @@ $fixed-column-background: #f0f0f0;
     th {
       text-align: center; // Centra el contenido dentro de las celdas
       padding: 10px; // Espaciado uniforme
+      object-fit: contain;
   
       img.logo {
         display: block; // Trata la imagen como un bloque
