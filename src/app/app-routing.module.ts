@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { ContactFormComponent } from './pages/home/contactform/contactform.component';
 import { PoliticasComponent } from './pages/home/politicas/politicas.component';
 import { TycComponent } from './pages/home/tyc/tyc.component';
 import { PoliticasPrivacidadComponent } from './pages/home/politicaprivacidad/politicaprivacidad.component';
@@ -19,10 +18,7 @@ const routes: Routes = [
     
     loadChildren: () => import('./pages/home/cta/cta.component').then((m) => m.CtaComponent)
   },
-  // {
-  //   path: 'landing',
-  //   loadChildren: () => import('./pages/landings/landings.module').then(m => m.LandingsModule)
-  // },
+  
   {
     path: '#Caracteristicas',
     loadChildren: () => import('./pages/home/features/features.component').then(m => m.FeaturesComponent)

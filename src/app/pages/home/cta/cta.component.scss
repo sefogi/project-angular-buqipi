@@ -1,4 +1,16 @@
-.agoda{
-   width: 140px;
-   height: auto
+.logosc{
+   display: flex;
+   justify-content: space-between;
+   width: 120px;
+   height: fit-content;
+   
+   
+}
+@media screen and (max-width: 800px) {
+   .logosc {
+      width: 80px;
+      
+   }
+  
+   
 }

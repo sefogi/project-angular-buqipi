@@ -7,26 +7,16 @@ import { LeafletModule } from '@asymmetrik/ngx-leaflet';
 
 
 // modules
-import { CoreModule } from './core/core.module';
+
 import { AppRoutingModule } from './app-routing.module';
 import { SharedModule } from './shared/shared.module';
 
 // component
 import { AppComponent } from './app.component';
-// import { ContactFormComponent } from './pages/home/contactform/contactform.component';
-// import { PoliticasComponent } from './pages/home/politicas/politicas.component'
-// import { TycComponent } from './pages/home/tyc/tyc.component';
-// import { PoliticasPrivacidadComponent } from './pages/home/politicaprivacidad/politicaprivacidad.component';
-// import { PoliticasCookiesComponent } from './pages/home/politicascookies/politicascookies.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    // ContactFormComponent,
-    // PoliticasComponent,
-    // TycComponent,
-    // PoliticasPrivacidadComponent,
-    // PoliticasCookiesComponent,
     
   ],
   imports: [
@@ -36,12 +26,11 @@ import { AppComponent } from './app.component';
     BrowserAnimationsModule,
     HttpClientModule,
     LeafletModule,
-    CoreModule,
+    
     AppRoutingModule,
     SharedModule
   ],
-  // exports:[ContactFormComponent],
- 
+  
   providers: [],
   bootstrap: [AppComponent]
 })
