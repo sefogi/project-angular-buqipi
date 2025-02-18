@@ -1,0 +1,239 @@
+
+$fixed-column-width: 200px;
+$fixed-column-background: #f0f0f0;
+
+
+.small-font {
+  font-size: 10px; 
+}
+
+.tablebq {
+  width: 100%;
+  overflow-x: auto; 
+
+  
+}
+
+
+.buqipiicon{
+  max-width: 5vh;
+    
+    height: auto;
+}
+
+
+.holiduicon {
+    max-width: 11vh;
+    width: 100%;
+    height: auto;
+    filter: grayscale(100%);
+   transition: filter 0.3s ease;
+  }
+
+  .aviratoicon {
+    max-width: 9vh;
+    // Si quieres que también sea responsiva en el contenedor
+    width: 100%;
+    height: auto;
+    margin-bottom: 4px;
+    filter: grayscale(100%);
+  transition: filter 0.3s ease;
+  }
+  .amenitizicon {
+    max-width: 10vh;
+    // Si quieres que también sea responsiva en el contenedor
+    width: 100%;
+    height: auto;
+    margin-bottom: 4px;
+    filter: grayscale(100%);
+  transition: filter 0.3s ease;
+  }
+
+  .redfortsicon {
+    max-width: 10vh;
+    // Si quieres que también sea responsiva en el contenedor
+    width: 100%;
+    height: auto;
+    margin-bottom: 3px;
+    filter: grayscale(100%);
+  transition: filter 0.3s ease;
+  }
+  
+  .littlehicon {
+    max-width: 11vh;
+    // Si quieres que también sea responsiva en el contenedor
+    width: 100%;
+    height: auto;
+    margin-bottom: 4px;
+    filter: grayscale(100%);
+  transition: filter 0.3s ease;
+  }
+
+  .smoobuicon {
+    max-width: 10vh;
+    // Si quieres que también sea responsiva en el contenedor
+    width: 100%;
+    height: auto;
+    margin-bottom: 3px;
+    filter: grayscale(100%);
+  transition: filter 0.3s ease;
+  }
+  
+  .octareicon {
+    max-width: 10vh;
+    // Si quieres que también sea responsiva en el contenedor
+    width: 100%;
+    height: auto;
+    margin-bottom: 4px;
+    filter: grayscale(100%);
+  transition: filter 0.3s ease;
+  }
+
+  $table-logo-size: 100px; // Tamaño máximo de ancho
+  $table-logo-height: 50px; // Tamaño máximo de alto
+  
+  .table {
+    th {
+      text-align: center; // Centra el contenido dentro de las celdas
+      padding: 10px; // Espaciado uniforme
+      object-fit: contain;
+  
+      img.logo {
+        display: block; // Trata la imagen como un bloque
+        margin: 0 auto; // Centra la imagen horizontalmente
+        max-width: $table-logo-size; // Ancho máximo para los logos
+        max-height: $table-logo-height; // Alto máximo para los logos
+        object-fit: contain; // Mantén las proporciones de las imágenes
+      }
+    }
+  }
+
+  .table-fixed {
+    th {
+      position: sticky; // Fija la celda en la parte superior
+      top: 0; // Fija la celda en la parte superior
+      background: $fixed-column-background; // Color de fondo
+      width: $fixed-column-width; // Ancho fijo
+    }
+  }
+
+  .table-scroll {
+    overflow-x: auto; // Agrega scroll horizontal
+  }
+
+  .table-scroll table {
+    width: 100%; // Ancho del 100%
+    min-width: 800px; // Ancho mínimo
+  }
+  
+  @media screen and (max-width: 800px) {
+    .table-scroll table {
+      min-width: 400px; // Ancho mínimo
+    }
+
+    .table {
+      th {
+        padding: 5px; // Espaciado uniforme
+        img.logo {
+          max-width: 50px; // Ancho máximo para los logos
+          max-height: 25px; // Alto máximo para los logos
+        }
+      }
+    }
+  
+    .buqipiicon{
+      max-width: 5vh;
+        
+        height: auto;
+    }
+    
+    
+    .holiduicon {
+        max-width: 14vh;
+        margin-bottom: 3.7px;
+        height: auto;
+        filter: grayscale(100%);
+       transition: filter 0.3s ease;
+      }
+    
+      .aviratoicon {
+        max-width: 9vh;
+        // Si quieres que también sea responsiva en el contenedor
+        width: 100%;
+        height: auto;
+        margin-bottom: 4px;
+        filter: grayscale(100%);
+      transition: filter 0.3s ease;
+      }
+      .amenitizicon {
+        max-width: 8vh;
+        // Si quieres que también sea responsiva en el contenedor
+        width: 100%;
+        height: auto;
+        margin-bottom: 4px;
+        filter: grayscale(100%);
+      transition: filter 0.3s ease;
+      }
+    
+      .redfortsicon {
+        max-width: 10vh;
+        // Si quieres que también sea responsiva en el contenedor
+        width: 100%;
+        height: auto;
+        margin-bottom: 3px;
+        filter: grayscale(100%);
+      transition: filter 0.3s ease;
+      }
+      
+      .littlehicon {
+        max-width: 12vh;
+        // Si quieres que también sea responsiva en el contenedor
+        width: 100%;
+        height: auto;
+        margin-bottom: 4px;
+        filter: grayscale(100%);
+      transition: filter 0.3s ease;
+      }
+    
+      .smoobuicon {
+        max-width: 10vh;
+        // Si quieres que también sea responsiva en el contenedor
+        width: 100%;
+        height: auto;
+        margin-bottom: 3px;
+        filter: grayscale(100%);
+      transition: filter 0.3s ease;
+      }
+      
+      .octareicon {
+        max-width: 10vh;
+        // Si quieres que también sea responsiva en el contenedor
+        width: 100%;
+        height: auto;
+        margin-bottom: 4px;
+        filter: grayscale(100%);
+      transition: filter 0.3s ease;
+      }
+    
+      $table-logo-size: 100px; // Tamaño máximo de ancho
+      $table-logo-height: 50px; // Tamaño máximo de alto
+      
+      .table {
+        th {
+          text-align: center; // Centra el contenido dentro de las celdas
+          padding: 10px; // Espaciado uniforme
+          object-fit: contain;
+      
+          img.logo {
+            display: block; // Trata la imagen como un bloque
+            margin: 0 auto; // Centra la imagen horizontalmente
+            max-width: $table-logo-size; // Ancho máximo para los logos
+            max-height: $table-logo-height; // Alto máximo para los logos
+            object-fit: contain; // Mantén las proporciones de las imágenes
+          }
+        }
+      }
+    
+    
+  }
+

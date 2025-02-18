@@ -43,7 +43,9 @@
               "src/assets"
             ],
             "styles": [
-              "src/assets/scss/theme.scss"
+              "src/assets/scss/theme.scss",
+               "node_modules/aos/dist/aos.css"
+              
             ],
             "scripts": []
           },
@@ -52,8 +54,8 @@
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "1mb",
-                  "maximumError": "1mb"
+                  "maximumWarning": "2mb",
+                  "maximumError": "2mb"
                 },
                 {
                   "type": "anyComponentStyle",
@@ -135,5 +137,5 @@
       }
     }
   },
-  "defaultProject": "biqipi"
+  "defaultProject": "buqipi"
 }

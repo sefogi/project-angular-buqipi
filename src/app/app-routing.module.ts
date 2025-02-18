@@ -1,8 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { PoliticasComponent } from './pages/home/politicas/politicas.component';
+import { TycComponent } from './pages/home/tyc/tyc.component';
+import { PoliticasPrivacidadComponent } from './pages/home/politicaprivacidad/politicaprivacidad.component';
+import { PoliticasCookiesComponent } from './pages/home/politicascookies/politicascookies.component';
+import { ContactPageComponent } from './pages/home/contactpage/contactpage.component';
 
-// guard
-import { AuthGuard } from './core/guards/auth.guard';
 
 const routes: Routes = [
   {
@@ -11,17 +14,38 @@ const routes: Routes = [
     pathMatch: 'full'
   },
   {
-    path: '',
-    canActivate: [AuthGuard],
-    loadChildren: () => import('./pages/pages.module').then(m => m.PagesModule)
+    path: '#Producto',
+    
+    loadChildren: () => import('./pages/home/cta/cta.component').then((m) => m.CtaComponent)
+  },
+  
+  {
+    path: '#Caracteristicas',
+    loadChildren: () => import('./pages/home/features/features.component').then(m => m.FeaturesComponent)
   },
   {
-    path: 'docs',
-    loadChildren: () => import('./docs/docs.module').then(m => m.DocsModule)
+    path: '#Precios',
+    loadChildren: () => import('./pages/home/pricing/pricing.component').then(m => m.PricingComponent)
   },
   {
-    path: 'auth',
-    loadChildren: () => import('./auth/auth.module').then(m => m.AuthModule)
+    path: 'Contacto',
+    component:ContactPageComponent
+  },
+  {
+    path: 'Politicas',
+    component:PoliticasComponent
+  },
+  {
+    path: 'Tyc',
+    component:TycComponent
+  },
+  {
+    path: 'PoliticasPrivacidad',
+    component:PoliticasPrivacidadComponent
+  },
+  {
+    path: 'PoliticasCookies',
+    component:PoliticasCookiesComponent
   },
   {
     path: 'home',
