@@ -3,10 +3,10 @@ import { Title } from '@angular/platform-browser';
 import feather from 'feather-icons';
 
 // types
-import { Demo, Feature } from './home.model';
+import {  Feature } from './home.model';
 
 // data
-import { AUTHDEMOS, features, LANDINGDEMOS } from './data';
+import {  features} from './data';
 
 @Component({
   selector: 'app-home-page',
@@ -15,9 +15,9 @@ import { AUTHDEMOS, features, LANDINGDEMOS } from './data';
 })
 export class HomeComponent implements OnInit {
 
-  landingDemos: Demo[] = [];
-  pagesDemos: Demo[] = [];
-  authDemos: Demo[] = [];
+  // landingDemos: Demo[] = [];
+  // pagesDemos: Demo[] = [];
+  // authDemos: Demo[] = [];
   features: Feature[] = [];
 
   constructor (private titleService: Title) { }
@@ -33,9 +33,9 @@ export class HomeComponent implements OnInit {
   }
 
   _fetchData(): void {
-    this.landingDemos = LANDINGDEMOS;
+    // this.landingDemos = LANDINGDEMOS;
     // this.pagesDemos = PAGESDEMOS;
-    this.authDemos = AUTHDEMOS;
+    // this.authDemos = AUTHDEMOS;
     this.features = features;
   }
 

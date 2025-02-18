@@ -43,3 +43,4 @@
 //     return HomeComponent;
 // }());
 // exports.HomeComponent = HomeComponent;
+"use strict";
